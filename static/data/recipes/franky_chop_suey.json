@@ -1,0 +1,149 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Franky",
+    "dialogue_text": "SUPER! Hey there, [username]! Today your cyborg buddy Franky is gonna help you make a crunchy, saucy Veg American Chop Suey!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F1.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Franky",
+    "dialogue_text": "Let’s begin with the fried noodles—because nothing says SUPER like a crispy base!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F2.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Franky",
+    "dialogue_text": "Take your boiled noodles in a bowl. Add a pinch of salt and a good sprinkle of corn-starch.",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F3.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Franky",
+    "dialogue_text": "Mix well so every strand is coated. Coating equals crispiness, and crispiness equals SUPER!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F4.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Franky",
+    "dialogue_text": "Heat oil and deep-fry the noodles until they turn golden and crunchy. Oh yeah, hear that sizzle!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F5.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Franky",
+    "dialogue_text": "Take them out and keep them aside. We’ll use these beauties soon.",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F6.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Franky",
+    "dialogue_text": "Now let’s make the sauce—sweet, spicy, tangy… a SUPER combo!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F7.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Franky",
+    "dialogue_text": "Heat oil in a wok and add ginger, green chilli, and garlic. Give them a quick, powerful cyborg sauté!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F8.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Franky",
+    "dialogue_text": "Now toss in onion, carrot, cabbage, capsicum, red and yellow bell peppers, and baby corn. High heat, fast moves!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F9.png"
+  },
+  {
+    "step_id": 9,
+    "speaker": "Franky",
+    "dialogue_text": "Stir-fry them for a minute. Keep it moving—don’t let those veggies lose their crunch!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F10.png"
+  },
+  {
+    "step_id": 10,
+    "speaker": "Franky",
+    "dialogue_text": "Add soya sauce and let it caramelize. The aroma—SUPER delicious!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F11.png"
+  },
+  {
+    "step_id": 11,
+    "speaker": "Franky",
+    "dialogue_text": "Now add tomato ketchup, red chilli sauce, black pepper powder, and water. Mix everything like a true craftsman!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F11.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Franky",
+    "dialogue_text": "Add a little sugar to balance the flavors. Even cyborgs appreciate harmony!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F12.png"
+  },
+  {
+    "step_id": 13,
+    "speaker": "Franky",
+    "dialogue_text": "Bring the sauce to a boil. Let it bubble with confidence!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F13.png"
+  },
+  {
+    "step_id": 14,
+    "speaker": "Franky",
+    "dialogue_text": "Now add the corn-starch slurry—this is what makes the sauce thick, glossy, and SUPER smooth.",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F13.png"
+  },
+  {
+    "step_id": 15,
+    "speaker": "Franky",
+    "dialogue_text": "Mix well and cook for another minute. Add the coriander stems for a fresh, earthy kick.",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F14.png"
+  },
+  {
+    "step_id": 16,
+    "speaker": "Franky",
+    "dialogue_text": "Switch off the heat. Your sauce is ready and looking fantastic!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F15.png"
+  },
+
+  {
+    "step_id": 17,
+    "speaker": "Franky",
+    "dialogue_text": "Now it’s assembly time—my favorite part! SUPER presentation mode: ON!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F16.png"
+  },
+  {
+    "step_id": 18,
+    "speaker": "Franky",
+    "dialogue_text": "Place the crisp fried noodles on a plate. Make sure they sit like a proud crunchy mountain!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F17.png"
+  },
+  {
+    "step_id": 19,
+    "speaker": "Franky",
+    "dialogue_text": "Pour the hot, glossy sauce right over the noodles. Watch it cascade—it’s SUPER satisfying!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F18.png"
+  },
+  {
+    "step_id": 20,
+    "speaker": "Franky",
+    "dialogue_text": "Garnish with fresh spring onion. A finishing touch worthy of a cyborg chef!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F19.png"
+  },
+
+  {
+    "step_id": 21,
+    "speaker": "Franky",
+    "dialogue_text": "And there you go, [username]—Veg American Chop Suey! Crispy! Saucy! SUPER!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F20.png"
+  },
+  {
+    "step_id": 22,
+    "speaker": "Franky",
+    "dialogue_text": "Serve hot and enjoy the glorious mix of textures. Even my metal heart warms up to this!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F21.png"
+  },
+  {
+    "step_id": 23,
+    "speaker": "Franky",
+    "dialogue_text": "You cooked like a true craftsman today. I’m proud of you… SUPER proud!",
+    "image_path": "/static/pictures/Franky/Chop_Suey/F22.png"
+  }
+]

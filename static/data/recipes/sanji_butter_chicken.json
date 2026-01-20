@@ -1,0 +1,174 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Sanji",
+    "dialogue_text": "Ah, my beautiful lady… and you too, [username]. Just in time for a dish worthy of royalty.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S1.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Sanji",
+    "dialogue_text": "Today, we’re preparing something rich… creamy… irresistible. Butter Chicken. Just like a perfect romance, it needs patience… and a little heat.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S2.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Stay close to me through every step, okay? If anything burns, I’ll take responsibility — especially if it’s your heart.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S3.png"
+  },
+
+  {
+    "step_id": 0.2,
+    "speaker": "Sanji",
+    "dialogue_text": "Let’s go through our ingredients before we set the kitchen on fire — intentionally, of course.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S4.png"
+  },
+
+  {
+    "step_id": 0.21,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Whole Chicken",
+      "Lemon Juice",
+      "Salt",
+      "Ginger-Garlic Paste"
+    ],
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S4.png"
+  },
+  {
+    "step_id": 0.22,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Hung Curd",
+      "Mustard Oil",
+      "Degi Red Chilli Powder",
+      "Roasted Gram Flour",
+      "Crushed Black Pepper"
+    ],
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S4.png"
+  },
+  {
+    "step_id": 0.23,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Onions",
+      "Tomatoes",
+      "Cashews",
+      "Cinnamon",
+      "Bay Leaf",
+      "Green Cardamom"
+    ],
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S4.png"
+  },
+
+  {
+    "step_id": 1,
+    "speaker": "Sanji",
+    "dialogue_text": "[username], come here. Let’s begin our first marination — gently coating the chicken with lemon juice, salt, and ginger-garlic paste.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S5.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Massage it well… ah, not too rough. Treat the chicken like you’d treat a lady — with care.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S6.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Guard",
+    "dialogue_text": "Uhh… [username], focus on the chicken please.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S7.png"
+  },
+
+  {
+    "step_id": 2,
+    "speaker": "Sanji",
+    "dialogue_text": "Now for the second marination — the deeper, richer layer. Hung curd, chilli, mustard oil, and that roasted gram flour.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S8.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Mix it all together and coat the chicken again. Slowly… lovingly… flavor takes time to blossom.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S9.png"
+  },
+
+  {
+    "step_id": 3,
+    "speaker": "Sanji",
+    "dialogue_text": "Let’s prepare the gravy base. Add ghee, bay leaf, and cinnamon to the pan — hear that sizzle? That’s the sound of magic starting.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S10.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Add onions and sauté until golden. Then tomatoes, chilli, turmeric, coriander powder. Cook them until soft enough to melt for you.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S11.png"
+  },
+  {
+    "step_id": 3.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the onions burn, the whole gravy’ll turn bitter. Keep an eye on them!",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S12.png"
+  },
+
+  {
+    "step_id": 4,
+    "speaker": "Sanji",
+    "dialogue_text": "Now blend everything into a smooth, creamy paste. This is the heart of the dish — rich and irresistible.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S13.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Sanji",
+    "dialogue_text": "Let’s grill the marinated chicken. Hear that sear? That’s passion meeting perfection.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S14.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Cook each side gently. We just want a kiss of char — enough to tempt, not overpower.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S15.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Sanji",
+    "dialogue_text": "Time to unite everything. Add the gravy, honey, butter — a lot of butter — and let it simmer like a slow confession.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S16.png"
+  },
+  {
+    "step_id": 6.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Add the chicken, fresh cream, and a final swirl of butter. Gorgeous… absolutely gorgeous.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S17.png"
+  },
+  {
+    "step_id": 6.2,
+    "speaker": "Guard",
+    "dialogue_text": "[username], stop flirting with the curry!.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S17.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Sanji",
+    "dialogue_text": "A little coal smoke for that restaurant charm — just two minutes. Close the lid and let the aroma seduce your senses.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S18.png"
+  },
+
+  {
+    "step_id": 8,
+    "speaker": "Sanji",
+    "dialogue_text": "[username], look at this masterpiece. Creamy, velvety, utterly divine. Just like the company I prefer while cooking.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S19.png"
+  },
+  {
+    "step_id": 9,
+    "speaker": "Sanji",
+    "dialogue_text": "Serve it hot… and don’t keep a lady waiting. Especially not me.",
+    "image_path": "/static/pictures/Sanji/Butter_Chicken/S20.png"
+  }
+]

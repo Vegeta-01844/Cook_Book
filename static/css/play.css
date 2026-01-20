@@ -1,0 +1,393 @@
+/* ========================================================= */
+/* EXISTING – DO NOT CHANGE BEHAVIOR */
+/* ========================================================= */
+
+/* Zoro intro video */
+.play-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 20;
+    display: none;
+    object-fit: contain;
+    background: black;
+}
+
+/* Fade-out after video ends */
+.fade-out {
+    animation: fadeOut 1.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* Background image */
+#background-image {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('../pictures/Extra/background-2.jpg') no-repeat center center/cover;
+    z-index: 0;
+    opacity: 0.5;
+    filter: brightness(0.6);
+}
+
+/* ========================================================= */
+/* GAME LAYOUT */
+/* ========================================================= */
+
+#game-container {
+    max-width: 900px;
+    margin: 100px auto 50px auto; /* pulled lower for elegance */
+    padding: 25px;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.35);
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+    transition: all 0.5s ease;
+}
+
+/* ========================================================= */
+/* PLAYER STATUS BAR */
+/* ========================================================= */
+
+#player-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 12px 18px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
+    box-shadow: inset 0 0 12px rgba(0,255,0,0.25);
+}
+
+#player-points {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#player-hearts {
+    display: flex;
+    gap: 12px;
+}
+
+.life-icon {
+    width: 36px;
+    height: 36px;
+    background: url('../pictures/Extra/Gomu.png') no-repeat center/contain;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.life-icon.lost {
+    opacity: 0.2;
+    transform: scale(0.8);
+}
+
+/* ========================================================= */
+/* INSTRUCTION OVERLAY */
+/* ========================================================= */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.instruction-card {
+    margin-top: 230px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 750px;
+    box-shadow: 0 0 30px rgba(0,255,0,0.3);
+    transform: translateY(-50px);
+    animation: slideDown 0.6s forwards;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-50px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+.instruction-image {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.instruction-text h2 {
+    margin-top: 0;
+    color: limegreen;
+    text-shadow: 0 0 8px limegreen;
+    font-size: 1.8rem;
+}
+
+.instruction-text ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+#start-game-btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: limegreen;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0,255,0,0.4);
+}
+
+#start-game-btn:hover {
+    background: #a6ff4d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,255,0,0.6);
+}
+
+/* ========================================================= */
+/* WORD GRID (WORDLE STYLE) */
+/* ========================================================= */
+
+#word-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 30px 0;
+    align-items: center;
+    display: none;
+}
+
+.word-row {
+    display: flex;
+    gap: 10px;
+}
+
+.tile {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: #111;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
+}
+
+.tile.correct {
+    background: green;
+    color: #fff;
+    box-shadow: 0 0 12px green;
+}
+
+.tile.present {
+    background: goldenrod;
+    color: #fff;
+    box-shadow: 0 0 12px gold;
+}
+
+.tile.absent {
+    background: #333;
+}
+
+/* ========================================================= */
+/* INPUT SECTION */
+/* ========================================================= */
+
+#guess-input-section {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    display: none;
+}
+
+#guess-input {
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#guess-input:focus {
+    border-color: limegreen;
+    box-shadow: 0 0 10px limegreen;
+}
+
+#submit-guess-btn {
+    padding: 12px 28px;
+    background: limegreen;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0,255,0,0.4);
+}
+
+#submit-guess-btn:hover {
+    background: #a6ff4d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,255,0,0.6);
+}
+
+/* ========================================================= */
+/* HINT CARD */
+/* ========================================================= */
+
+#hint-section {
+    margin-top: 25px;
+    text-align: center;
+    display: none;
+}
+
+.hint-card {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,255,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.hint-front,
+.hint-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s, filter 0.3s ease;
+}
+
+.hint-front {
+    background: #222;
+    color: limegreen;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.hint-back {
+    background: #000;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.hint-card.flipped .hint-front {
+    transform: rotateY(180deg);
+}
+
+.hint-card.flipped .hint-back {
+    transform: rotateY(0deg);
+}
+
+/* Blur the hint image when flipped */
+.hint-card.flipped #hint-image {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+#hint-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hint-warning {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* ========================================================= */
+/* RESULT MODAL */
+/* ========================================================= */
+
+.result-card {
+    background: rgba(0,0,0,0.85);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,255,0,0.5);
+}
+
+#result-title {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 12px limegreen;
+}
+
+/* Play Again Button */
+#play-again-btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: limegreen;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0,255,0,0.4);
+}
+
+#play-again-btn:hover {
+    background: #a6ff4d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,255,0,0.6);
+}
+
+/* ---------------------------
+   Responsive adjustments
+---------------------------- */
+@media screen and (max-width: 600px) {
+    .tile {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    #round-timer {
+        font-size: 1rem;
+    }
+    .hint-card {
+        width: 120px;
+        height: 160px;
+    }
+}

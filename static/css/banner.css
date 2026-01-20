@@ -1,0 +1,160 @@
+/* static/css/banner.css */
+
+/* Main Header Container */
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* ALREADY GOOD: Centers nav-left/center/right */
+    padding: 0 4%; 
+    z-index: 9999;
+    
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    transition: background 0.3s ease, top 0.3s ease;
+}
+
+/* Scrolled State */
+.top-banner.scrolled {
+    background: rgba(15, 5, 24, 0.95); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.top-banner.hide {
+    top: -80px;
+}
+
+/* --- 1. LEFT: Logo and Text (REVISED) --- */
+.nav-left {
+    flex: 1; 
+    /* The image and text are now inside the .logo-link, so this container just needs minimal flex */
+    display: flex;
+    align-items: center;
+}
+
+/* NEW: Flexbox container for the Logo and Text */
+.nav-left .logo-link {
+    display: flex;
+    align-items: center; /* KEY: Vertically centers the logo and the text */
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-logo {
+    /* Adjusted size to look better with the text next to it */
+    width: 120px; 
+    height: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 12px; /* Space between logo image and the text */
+}
+
+.nav-logo:hover {
+    transform: scale(1.1);
+}
+
+/* NEW: Style for the "GRANDLINE GOURMET" text */
+.logo-text {
+    font-size: 1.5rem; /* Large enough to be the main title */
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* --- 2. CENTER: Nav Links (No changes needed) --- */
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+}
+
+.nav-item {
+    text-decoration: none;
+    font-family: 16px Poppins,sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Turn White + Glow */
+.nav-item:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Optional: Active indicator line (like Anime UI) */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #fcb603;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* --- 3. RIGHT: User Info (No changes needed) --- */
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-greeting {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.logout-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE: Hide center links on mobile */
+@media (max-width: 768px) {
+    .nav-center {
+        display: none;
+    }
+    .user-greeting {
+        display: none;
+    }
+}

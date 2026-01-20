@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandline Gourmet - Cooking</title>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='pictures/Extra/Logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cooking.css') }}">
+</head>
+<body>
+
+    <!-- Background Audio -->
+    <audio id="cook-audio" loop>
+        <source src="{{ url_for('static', filename='audio/Extra/Sanji-Full.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <!-- Flame Intro Video -->
+    <video id="flame-video" class="flame-overlay">
+        <source src="{{ url_for('static', filename='video/Sanji-Intro.mp4') }}" type="video/mp4">
+    </video>
+
+    <!-- Banner -->
+    {% if role %}
+        {% include 'banner.html' %}
+    {% endif %}
+
+    <!-- Canvas for Waves + Floating Ingredients -->
+    <canvas id="wave-canvas"></canvas>
+
+    <!-- Cooking Menu -->
+    <div class="cooking-menu" id="cooking-menu">
+        <h1 class="menu-title">Grandline Gourmet Menu</h1>
+
+        <!-- STARTERS -->
+        <section class="menu-section">
+            <h2>Starters</h2>
+            <!-- Veg Starters -->
+            <div class="menu-subsection">
+                <h3>🟢Veg Starters</h3>
+                <a href="{{ url_for('momo_quest') }}">
+                    <div class="dish-card dish-nami">
+                        <img src="{{ url_for('static', filename='pictures/Nami/Momos.jpg') }}" class="dish-img" alt="Dimsums">
+                        <div class="dish-info">
+                            <h4>Nami’s Tangy Schezwan Dimsums</h4>
+                            <p>Steamed veggie dumplings tossed in hot schezwan glaze with a citrus kick.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Nami/N14.png') }}" class="char-img" alt="Nami">
+                    </div>
+                </a>
+                <a href="{{ url_for('wedges_quest') }}">
+                    <div class="dish-card dish-robin">
+                        <img src="{{ url_for('static', filename='pictures/Robin/Potato_Wedges.jpg') }}" class="dish-img" alt="Tostadas">
+                        <div class="dish-info">
+                            <h4>Robin’s Mexican Sliced Jícama</h4>
+                            <p>Crisp Potatoes sprinkled with aromatic spices & salsa.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Robin/R28.png') }}" class="char-img" alt="Robin">
+                    </div>
+                </a>
+                <a href="{{ url_for('paneer_tikka_quest', dish_id='chopper_paneer') }}">
+                    <div class="dish-card dish-chopper">
+                        <img src="{{ url_for('static', filename='pictures/Chopper/Paneer_Tikka.jpg') }}" class="dish-img" alt="Paneer Skewers">
+                        <div class="dish-info">
+                            <h4>Chopper’s Herb-Glazed Paneer Skewers</h4>
+                            <p>Grilled paneer cubes marinated in fresh herbs and spices.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Chopper/C1.png') }}" class="char-img" alt="Chopper">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Non-Veg Starters -->
+            <div class="menu-subsection">
+                <h3>🔴Non-Veg Starters</h3>
+                <a href="{{ url_for('chicken_tikka_quest') }}">
+                    <div class="dish-card dish-zoro">
+                        <img src="{{ url_for('static', filename='pictures/zoro/Chicken_Tikka.jpg') }}" class="dish-img" alt="Peri-Peri Chicken">
+                        <div class="dish-info">
+                            <h4>Zoro’s Fiery Peri-Peri Chicken Bites</h4>
+                            <p>Juicy chicken chunks coated in spicy peri-peri sauce, grilled to perfection.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/zoro/Z1.png') }}" class="char-img" alt="Zoro">
+                    </div>
+                </a>
+                <a href="{{ url_for('chicken_crispy_quest') }}">
+                    <div class="dish-card dish-sanji">
+                        <img src="{{ url_for('static', filename='pictures/sanji/Chicken_Strips.jpg') }}" class="dish-img" alt="Satay">
+                        <div class="dish-info">
+                            <h4>Sanji’s Street-Style Chicken Satay</h4>
+                            <p>Skewered chicken strips served with a nutty garlic-soy dip.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/sanji/S1.png') }}" class="char-img" alt="Sanji">
+                    </div>
+                </a>
+                <a href="{{ url_for('cheese_balls_quest') }}">
+                    <div class="dish-card dish-usopp">
+                        <img src="{{ url_for('static', filename='pictures/usopp/Cheese_Balls.jpg') }}" class="dish-img" alt="Egg Fingers">
+                        <div class="dish-info">
+                            <h4>Usopp’s Crispy Cheese Balls</h4>
+                            <p>Fried with Indian masalas, crunchy and bold.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/usopp/U1.png') }}" class="char-img" alt="Usopp">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- MAIN COURSE -->
+        <section class="menu-section">
+            <h2>Main Course</h2>
+            <!-- Veg -->
+            <div class="menu-subsection">
+                <h3>🟢Veg Main Course</h3>
+                <a href="{{ url_for('frankie_quest') }}">
+                    <div class="dish-card dish-nami">
+                        <img src="{{ url_for('static', filename='pictures/Nami/Frankie.jpg') }}" class="dish-img" alt="Enchiladas">
+                        <div class="dish-info">
+                            <h4>Nami’s Spiced Vegetable Enchiladas</h4>
+                            <p>Soft tortillas stuffed with veggies, baked with chili sauce and cheese.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Nami/N11.png') }}" class="char-img" alt="Nami">
+                    </div>
+                </a>
+                <a href="{{ url_for('palak_paneer_quest') }}">
+                    <div class="dish-card dish-robin">
+                        <img src="{{ url_for('static', filename='pictures/Robin/Palak_Paneer.jpg') }}" class="dish-img" alt="Palak Paneer">
+                        <div class="dish-info">
+                            <h4>Robin’s Creamy Palak Paneer</h4>
+                            <p>Cottage cheese simmered in a silky spinach purée with mild spices.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Robin/R18.png') }}" class="char-img" alt="Robin">
+                    </div>
+                </a>
+                <a href="{{ url_for('chop_suey_quest') }}">
+                    <div class="dish-card dish-franky">
+                        <img src="{{ url_for('static', filename='pictures/Franky/Chop_Suey.jpg') }}" class="dish-img" alt="Mac Bowl">
+                        <div class="dish-info">
+                            <h4>Franky’s Cheesy American Chop Suey</h4>
+                            <p>Pasta cooked in a three-cheese sauce, indulgent and hearty.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Franky/F2.png') }}" class="char-img" alt="Franky">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Non-Veg -->
+            <div class="menu-subsection">
+                <h3>🔴Non-Veg Main Course</h3>
+                <a href="{{ url_for('amritsari_quest') }}">
+                    <div class="dish-card dish-luffy">
+                        <img src="{{ url_for('static', filename='pictures/Luffy/Tandoori_Chicken.jpg') }}" class="dish-img" alt="Tandoori Curry">
+                        <div class="dish-info">
+                            <h4>Luffy’s Smoky Amristari Murgh</h4>
+                            <p>Char-grilled chicken simmered in a rich, smoky tomato-onion gravy.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Luffy/L3.png') }}" class="char-img" alt="Luffy">
+                    </div>
+                </a>
+                <a href="{{ url_for('butter_chicken_quest') }}">
+                    <div class="dish-card dish-sanji">
+                        <img src="{{ url_for('static', filename='pictures/Sanji/Butter_Chicken.jpg') }}" class="dish-img" alt="Stir Fry">
+                        <div class="dish-info">
+                            <h4>Sanji’s Honey-Glazed Butter Chicken </h4>
+                            <p>Tender chicken tossed with peppers in savory sauce.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Sanji/S2.png') }}" class="char-img" alt="Sanji">
+                    </div>
+                </a>
+                <a href="{{ url_for('kolhapuri_quest') }}">
+                    <div class="dish-card dish-zoro">
+                        <img src="{{ url_for('static', filename='pictures/Zoro/Kolhapuri_Egg.jpg') }}" class="dish-img" alt="Egg Keema">
+                        <div class="dish-info">
+                            <h4>Zoro’s Kolhapuri Egg Curry with Naan</h4>
+                            <p>Spiced eggs and gravy cooked in desi-style, served with butter naan.</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='pictures/Zoro/Z2.png') }}" class="char-img" alt="Zoro">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- DESSERTS -->
+        <section class="menu-section">
+            <h2>🍰 Desserts</h2>
+            <a href="{{ url_for('cassata_quest')}}">
+                <div class="dish-card dish-brook">
+                    <img src="{{ url_for('static', filename='pictures/Brook/Cassata.jpg') }}" class="dish-img" alt="Caramel Flan">
+                    <div class="dish-info">
+                        <h4>Brook’s Cassata Rainbow Ice Cream</h4>
+                        <p>Classic ice cream topped with golden caramel sauce.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='pictures/Brook/BR1.png') }}" class="char-img" alt="Brook">
+                </div>
+            </a>
+            <a href="{{ url_for('dora_cake_quest') }}">
+                <div class="dish-card dish-jimbei">
+                    <img src="{{ url_for('static', filename='pictures/Jinbei/DoraCake.jpg') }}" class="dish-img" alt="JCake">
+                    <div class="dish-info">
+                        <h4>Jinbei's Dora Cake</h4>
+                        <p>A cake filled with Happiness.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='pictures/Jinbei/J1.png') }}" class="char-img" alt="Jinbei">
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <!-- Ingredient paths -->
+    <script>
+      const ingredientImgs = [
+        "{{ url_for('static', filename='pictures/ingredients/Boat.png') }}"
+        // Add more ingredient images here as needed
+      ];
+    </script>
+
+    <!-- Cooking JS -->
+    <script src="{{ url_for('static', filename='js/cooking.js') }}"></script>
+</body>
+</html>

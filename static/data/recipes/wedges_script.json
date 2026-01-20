@@ -1,0 +1,195 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Robin",
+    "dialogue_text": "Ah? It's you! [username], just in time for the fun.",
+    "image_path": "/static/pictures/Robin/R17.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Robin",
+    "dialogue_text": "Today, we're making something crispy, golden, and dangerously delicious — Potato Wedges! Ready, [username]?",
+    "image_path": "/static/pictures/Robin/R11.jpg"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Robin",
+    "dialogue_text": "Stick with me through every step. Don’t worry — if anything starts to burn, I’ve got your back!",
+    "image_path": "/static/pictures/Robin/R13.png"
+  },
+  {
+    "step_id": 0.15,
+    "speaker": "Robin",
+    "dialogue_text": "Before we dive in, let's quickly scan through our ingredients.",
+    "image_path": "/static/pictures/Robin/Wedges/R1.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Robin",
+    "dialogue_text": [
+      "Potatoes (cut in wedges)",
+      "Salted Water",
+      "Ginger-Garlic Paste",
+      "Oil for frying"
+    ],
+    "image_path": "/static/pictures/Robin/Wedges/RW-23.png"
+  },
+  {
+    "step_id": 0.3,
+    "speaker": "Robin",
+    "dialogue_text": [
+      "Dry Oregano",
+      "Corn-starch",
+      "Rice Flour",
+      "Refined Flour",
+      "Degi Red Chilli Powder",
+      "Asafoetida"
+    ],
+    "image_path": "/static/pictures/Robin/Wedges/RW-22-1.png"
+  },
+  {
+    "step_id": 0.4,
+    "speaker": "Robin",
+    "dialogue_text": [
+      "Tomato (chopped)",
+      "Onion (chopped)",
+      "Green Chillies",
+      "Coriander Leaves",
+      "Chaat Masala",
+      "Lemon Juice"
+    ],
+    "image_path": "/static/pictures/Robin/Wedges/RW-22.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Robin",
+    "dialogue_text": "[username], let’s prepare our seasoning mix first. Grab a bowl and get ready.",
+    "image_path": "/static/pictures/Robin/Wedges/R2.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Robin",
+    "dialogue_text": "Add oregano, corn-starch, rice flour, refined flour, chilli powder, and asafoetida. Nice and easy, [username].",
+    "image_path": "/static/pictures/Robin/Wedges/R3.png"
+  },
+  {
+    "step_id": 1.11,
+    "speaker": "Robin",
+    "dialogue_text": "Mix it all together nicely. Perfect, [username]!",
+    "image_path": "/static/pictures/Robin/Wedges/R3.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the mixture looks clumpy, just break the lumps with your fingers. Smooth and even is what we want.",
+    "image_path": "/static/pictures/Robin/Wedges/RW-5.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Robin",
+    "dialogue_text": "Now let's tackle the potatoes! Heat salted water in a large pot.",
+    "image_path": "/static/pictures/Robin/Wedges/R4.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Robin",
+    "dialogue_text": "Once the water starts boiling, add your potato wedges.",
+    "image_path": "/static/pictures/Robin/Wedges/R5.png"
+  },
+  {
+    "step_id": 2.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the potatoes break when you poke them, you've overcooked them! Pull them out earlier next time.",
+    "image_path": "/static/pictures/Robin/Wedges/RW-21.png"
+  },
+  {
+    "step_id": 2.3,
+    "speaker": "Robin",
+    "dialogue_text": "Drain the potatoes and transfer them to a bowl. Nicely done, [username].",
+    "image_path": "/static/pictures/Robin/Wedges/R6.png"
+  },
+  {
+    "step_id": 2.31,
+    "speaker": "Robin",
+    "dialogue_text": "Add the seasoning mix and coat them well. Make sure every wedge is covered, [username].",
+    "image_path": "/static/pictures/Robin/Wedges/R7.png"
+  },
+  {
+    "step_id": 2.4,
+    "speaker": "Robin",
+    "dialogue_text": "Spread the coated wedges on a tray and let them cool completely.",
+    "image_path": "/static/pictures/Robin/Wedges/R8.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Robin",
+    "dialogue_text": "Heat oil in a kadai — medium heat for now.",
+    "image_path": "/static/pictures/Robin/Wedges/R9.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Robin",
+    "dialogue_text": "Drop in the cooled wedges gently and fry until they're cooked through.",
+    "image_path": "/static/pictures/Robin/Wedges/R10.png"
+  },
+  {
+    "step_id": 3.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the oil bubbles too aggressively, reduce the flame! We want frying, not fireworks.",
+    "image_path": "/static/pictures/Robin/Wedges/RW-21.png"
+  },
+  {
+    "step_id": 3.3,
+    "speaker": "Robin",
+    "dialogue_text": "Remove the wedges onto a plate. Look at those, [username]!",
+    "image_path": "/static/pictures/Robin/Wedges/R11.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Robin",
+    "dialogue_text": "Sprinkle some salt and chilli powder on top of those crispy wedges. They already look irresistible!",
+    "image_path": "/static/pictures/Robin/Wedges/R12.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Robin",
+    "dialogue_text": "Now let’s prepare the Mexican salsa. Add chopped tomatoes, onions, green chillies, and coriander leaves.",
+    "image_path": "/static/pictures/Robin/Wedges/R13.png"
+  },
+  {
+    "step_id": 5.2,
+    "speaker": "Robin",
+    "dialogue_text": "Next add salt, chaat masala, and lemon juice. Mix everything well — this salsa is fresh and zesty!",
+    "image_path": "/static/pictures/Robin/Wedges/R14.png"
+  },
+  {
+    "step_id": 5.3,
+    "speaker": "Guard",
+    "dialogue_text": "If it's too sour, add a pinch of salt. If it's too spicy… well, good luck!",
+    "image_path": "/static/pictures/Robin/Wedges/RW-20.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Robin",
+    "dialogue_text": "Time to assemble! Place the crispy potato wedges on your serving plate, [username].",
+    "image_path": "/static/pictures/Robin/Wedges/R15.png"
+  },
+  {
+    "step_id": 7.1,
+    "speaker": "Robin",
+    "dialogue_text": "Crispy outside, soft inside, cheesy on top — you absolutely nailed it!",
+    "image_path": "/static/pictures/Robin/Wedges/R16.png"
+  },
+  {
+    "step_id": 7.2,
+    "speaker": "Robin",
+    "dialogue_text": "See you next time, [username].",
+    "image_path": "/static/pictures/Robin/Wedges/R17.png"
+  },
+  {
+    "step_id": 7.3,
+    "speaker": "Robin",
+    "dialogue_text": "Can’t wait for our next adventure!",
+    "image_path": "/static/pictures/Robin/Wedges/R18.png"
+  }
+]

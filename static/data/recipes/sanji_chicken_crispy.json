@@ -1,0 +1,186 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Sanji",
+    "dialogue_text": "Alright love, [username]. A good cook prepares first—an excellent cook prepares beautifully.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Chicken breast",
+      "Salt",
+      "Vinegar",
+      "Whole eggs",
+      "Baking powder",
+      "Ginger"],
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S1.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Garlic",
+      "Tender coriander stems",
+      "Fried chicken strips",
+      "White sesame seeds",
+      "Black pepper powder",
+      "Coriander leaves"],
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S1.png"
+  },
+  {
+    "step_id": 0.3,
+    "speaker": "Sanji",
+    "dialogue_text": [
+      "Salt",
+      "Vinegar",
+      "Dark soy sauce",
+      "Tomato ketchup",
+      "Fried chicken strips",
+      "Spring onion",
+      "Coriander sprig"],
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S1.png"
+  },
+
+  {
+    "step_id": 1,
+    "speaker": "Sanji",
+    "dialogue_text": "Let’s start marinating, [username]. Add salt, vinegar, white pepper, eggs, ginger-garlic paste, and chicken strips to a bowl.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S2.png"
+  },
+  {
+    "step_id": 1.01,
+    "speaker": "Sanji",
+    "dialogue_text": "Mix like you're waking up the flavors gently—not wrestling them.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S2.png"
+  },{
+    "step_id": 1.1,
+    "speaker": "Guard",
+    "dialogue_text": "[username] Don’t skip the thin strips. Thick chicken won’t crisp—they’ll just sulk in the oil.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S3.png"
+  },
+
+  {
+    "step_id": 2,
+    "speaker": "Sanji",
+    "dialogue_text": "After 10–15 minutes of resting, [username], add cornstarch, refined flour, extra cornstarch, eggs, baking powder, and oil.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S4.png"
+  },
+  {
+    "step_id": 2.01,
+    "speaker": "Sanji",
+    "dialogue_text": "Mix until you have a thick, even coating.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S4.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Sanji",
+    "dialogue_text": "The batter should cling like a loyal friend, [username]. If it’s sliding off, add a bit more cornstarch.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S5.png"
+  },
+
+  {
+    "step_id": 3,
+    "speaker": "Sanji",
+    "dialogue_text": "Heat oil for frying on medium heat, [username]. Not high—never high. High heat burns the coating and leaves the chicken raw.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S6.png"
+  },
+  
+  {
+    "step_id": 3.01,
+    "speaker": "Sanji",
+    "dialogue_text": "And we don’t serve disasters in my kitchen.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S6.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Guard",
+    "dialogue_text": "Ideal frying temp is around 170–175°C, [username]. If bubbles go wild instantly, it’s too hot.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S7.png"
+  },
+
+  {
+    "step_id": 4,
+    "speaker": "Sanji",
+    "dialogue_text": "Drop the coated chicken strips into the oil, [username]. Fry until they’re crispy, golden, and beautiful—just like a perfect afternoon date.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S8.png"
+  },
+  {
+    "step_id": 4.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Move them to absorbent paper. Let them rest, [username]—resting brings out the best in both food and people.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S8.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Sanji",
+    "dialogue_text": "Time for the red chilli paste, [username]. Blend soaked red chillies, garlic, and ginger. Smooth!",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S9.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Sanji",
+    "dialogue_text": "Now let’s craft the Chinese-style crispy chicken, [username]. Heat oil, sauté ginger, garlic, and coriander stems.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S10.png"
+  },
+  {
+    "step_id": 6.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Add your fried chicken strips, sesame seeds, black pepper, coriander leaves, spring onion, and salt.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S11.png"
+  },
+  {
+    "step_id": 6.11,
+    "speaker": "Sanji",
+    "dialogue_text": "Toss confidently—like you’re leading the dance, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S11.png"
+  },
+
+  {
+    "step_id": 6.2,
+    "speaker": "Sanji",
+    "dialogue_text": "Finish it beautifully on a serving plate, garnished with spring onion and coriander, just for you, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S12.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Sanji",
+    "dialogue_text": "For the restaurant-style version, use the same wok—you want those leftover flavors, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S13.png"
+  },
+  {
+    "step_id": 7.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Sauté ginger, garlic, and coriander stem. Add the prepared chilli paste and cook it until it thickens and darkens, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S14.png"
+  },
+  {
+    "step_id": 7.2,
+    "speaker": "Sanji",
+    "dialogue_text": "Add vinegar, soy sauce, ketchup if you want sweetness, and then—your crispy chicken. Toss until it’s coated like a dream, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S15.png"
+  },
+  {
+    "step_id": 7.3,
+    "speaker": "Sanji",
+    "dialogue_text": "Finish with spring onion and adjust salt. Don’t oversalt—controls in the kitchen are sexy, [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S16.png"
+  },
+
+  {
+    "step_id": 8,
+    "speaker": "Sanji",
+    "dialogue_text": "Serve hot, darling [username].",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S17.png"
+  },
+  {
+    "step_id": 8.1,
+    "speaker": "Sanji",
+    "dialogue_text": "Whether you choose the Chinese-style or the restaurant-style chicken, both will win hearts—maybe even break a few.",
+    "image_path": "/static/pictures/Sanji/Chicken_Crispy/S17.png"
+  }
+]

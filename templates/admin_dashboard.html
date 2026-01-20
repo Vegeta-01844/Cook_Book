@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Cook Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_dashboard.css') }}">
+</head>
+<body class="bg-[#121212] text-white">
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="mb-8 text-center">
+        <h1 class="text-4xl font-extrabold mb-2">Admin Control Panel</h1>
+        <p>Welcome, <span class="font-bold text-amber-500">{{ session.get('username') }}</span>. Manage recipes and monitor system activity here.</p>
+    </div>
+
+    <!-- Error -->
+    {% if request.args.get('error') %}
+    <div class="bg-red-800 text-red-200 px-4 py-3 rounded-lg mb-6 text-center">
+        {{ request.args.get('error') }}
+    </div>
+    {% endif %}
+
+    <!-- Tabs -->
+    <div class="flex border-b border-gray-700 mb-6 justify-center space-x-2">
+        <!-- FIXED: Passed 'event' to the JS function -->
+        <button id="recipes-tab-link" class="tab-link" onclick="openTab('recipe-management', event)">
+            Recipe Management ({{ recipes|length }})
+        </button>
+        <!-- FIXED: Passed 'event' to the JS function -->
+        <button id="logs-tab-link" class="tab-link" onclick="openTab('activity-logs', event)">
+            Activity Logs ({{ logs|length }})
+        </button>
+    </div>
+
+    <!-- Tab Contents -->
+    <!-- Recipe Management -->
+    <div id="recipe-management" class="tab-content">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Add Recipe Card -->
+            <div class="card lg:col-span-1 h-full">
+                <h2 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2">Add New Recipe</h2>
+                <form method="POST" action="{{ url_for('admin_add_recipe') }}" class="space-y-4">
+                    <div class="input-group">
+                        <label for="name">Dish Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g., Pasta" required>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="input-group">
+                            <label for="category">Category</label>
+                            <input type="text" id="category" name="category" placeholder="e.g., Main Course" required>
+                        </div>
+                        <!-- FIX: Added Character Name field -->
+                        <div class="input-group">
+                            <label for="char_name">Character Name</label>
+                            <input type="text" id="char_name" name="char_name" placeholder="e.g., Sanji">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="ingredients">Ingredients (Short Summary)</label>
+                        <textarea id="ingredients" name="ingredients" rows="2" placeholder="e.g., Tomato, Cheese, Basil" required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="steps">Steps (Detailed)</label>
+                        <textarea id="steps" name="steps" rows="4" placeholder="Step 1: ..." required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="img_url">Image URL (Recipe)</label>
+                        <!-- Updated to set default value for easy manual path completion -->
+                        <input type="text" id="img_url" name="img_url" value="/static/pictures/" placeholder="e.g., /static/pictures/dish.jpg or external URL">
+                    </div>
+                    <!-- FIX: Added Character Image URL field -->
+                    <div class="input-group">
+                        <label for="char_img_url">Character Image URL</label>
+                        <!-- Updated to set default value for easy manual path completion -->
+                        <input type="text" id="char_img_url" name="char_img_url" value="/static/pictures/" placeholder="e.g., /static/pictures/char.png or external URL">
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Add Recipe</button>
+                </form>
+            </div>
+
+            <!-- Recipe List -->
+            <div class="card lg:col-span-2 max-h-[75vh] overflow-y-auto">
+                <h2 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2">Existing Recipes</h2>
+                <div class="space-y-3">
+                    {% for recipe in recipes %}
+                    <div class="flex items-center justify-between p-3 rounded-lg bg-[#2a2a2a] hover:bg-[#333333] transition">
+                        <div>
+                            <p class="font-bold text-lg">{{ recipe.name }}</p>
+                            <p class="text-sm text-gray-300">{{ recipe.category }} / {{ recipe.char_name }}</p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button 
+    type="button"
+    data-recipe='{{ {
+        "id": recipe.id,
+        "name": recipe.name,
+        "category": recipe.category,
+        "char_name": recipe.char_name,
+        "ingredients": recipe.ingredients,
+        "steps": recipe.steps,
+        "img_url": recipe.img_url,
+        "char_img_url": recipe.char_img_url
+    } | tojson | safe }}'
+    onclick="populateEditForm(this)"
+    class="px-3 py-1 bg-blue-600 text-white text-sm font-semibold rounded-md hover:bg-blue-700 transition">
+    Edit
+</button>
+
+                            <form method="POST" action="{{ url_for('admin_delete_recipe', recipe_id=recipe.id) }}" onsubmit="return confirm('Are you sure you want to delete {{ recipe.name }}?')">
+                                <button type="submit" class="btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Activity Logs & User Management -->
+<div id="activity-logs" class="tab-content">
+
+    <!-- Recent System Activity -->
+    <div class="card mb-6">
+        <div class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2">
+            <h2 class="text-2xl font-semibold">Recent System Activity</h2>
+            <form method="POST" action="{{ url_for('admin_delete_all_logs') }}" onsubmit="return confirm('Are you sure you want to delete all logs?')">
+                <button type="submit" class="px-3 py-1 bg-red-700 text-white rounded hover:bg-red-800 transition text-sm">Delete All Logs</button>
+            </form>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-700 rounded-lg">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Timestamp</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">User</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Action</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">IP Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in logs %}
+                    <tr class="hover:bg-[#333333] transition">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">{{ log.timestamp }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">{{ log.username }}</td>
+                        <td class="px-6 py-4 text-sm">{{ log.action }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">{{ log.ip_address }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Registered Users Management -->
+    <div class="card">
+        <h2 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2">Registered Users</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-700 rounded-lg">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Username</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Role</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr class="hover:bg-[#333333] transition">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">{{ user.username }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">{{ user.role }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">
+                            {% if user.role != 'admin' %}
+                            <form method="POST" action="{{ url_for('admin_delete_user', user_id=user.id) }}" class="inline" onsubmit="return confirm('Delete user {{ user.username }}?')">
+                                <button type="submit" class="px-2 py-1 bg-red-600 text-white text-sm rounded hover:bg-red-700 transition">Delete</button>
+                            </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Delete All Users Button -->
+        <form method="POST" action="{{ url_for('admin_delete_all_users') }}" class="mt-4 text-right" onsubmit="return confirm('Delete all non-admin users?')">
+            <button type="submit" class="px-3 py-2 bg-red-700 text-white rounded hover:bg-red-800 transition">Delete All Users</button>
+        </form>
+    </div>
+
+</div>
+
+
+    <!-- Footer -->
+    <div class="text-center mt-10 space-x-4">
+        <a href="{{ url_for('index') }}" class="text-amber-500 hover:text-amber-400 font-semibold transition">&larr; Back to Main Site</a>
+        <a href="{{ url_for('logout') }}" class="text-gray-400 hover:text-red-500 transition">| Log Out</a>
+    </div>
+
+</div>
+
+<!-- Edit Modal -->
+<div id="editModal" class="hidden">
+    <div class="modal-content">
+        <h3 class="text-2xl font-bold mb-4">Edit Recipe</h3>
+        <!-- The form action is set dynamically in the populateEditForm JS function -->
+        <form id="editRecipeForm" method="POST" action="" class="space-y-4">
+            <input type="hidden" id="edit_id" name="id">
+            <div class="input-group">
+                <label for="edit_name">Dish Name</label>
+                <input type="text" id="edit_name" name="name" required>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="input-group">
+                    <label for="edit_category">Category</label>
+                    <input type="text" id="edit_category" name="category" required>
+                </div>
+                <div class="input-group">
+                    <label for="edit_char_name">Character Name</label>
+                    <input type="text" id="edit_char_name" name="char_name">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="edit_ingredients">Ingredients (Short Summary)</label>
+                <textarea id="edit_ingredients" name="ingredients" rows="2" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="edit_steps">Steps (Detailed)</label>
+                <textarea id="edit_steps" name="steps" rows="5" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="edit_img_url">Image URL</label>
+                <!-- Placeholder text guidance only. Value is set by JS on edit -->
+                <input type="text" id="edit_img_url" name="img_url" placeholder="e.g., /static/images/dish.jpg or external URL">
+            </div>
+            <div class="input-group">
+                <label for="edit_char_img_url">Character Image URL</label>
+                <!-- Placeholder text guidance only. Value is set by JS on edit -->
+                <input type="text" id="edit_char_img_url" name="char_img_url" placeholder="e.g., /static/characters/char.png or external URL">
+            </div>
+            <div class="flex justify-end space-x-3 pt-4">
+                <button type="button" onclick="hideEditModal()" class="px-4 py-2 text-gray-700 bg-gray-600 rounded-lg hover:bg-gray-500 transition">Cancel</button>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/admin_dashboard.js') }}"></script>
+</body>
+</html>

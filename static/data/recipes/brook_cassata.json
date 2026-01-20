@@ -1,0 +1,116 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Brook",
+    "dialogue_text": "Yohoho! [username], ready to make a treat that’s as colorful as my guitar solos? Let’s create a Rainbow Ice Cream Cassata!",
+    "image_path": "/static/pictures/Brook/Cassata/B1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Brook",
+    "dialogue_text": "Stick with me, and by the end, your taste buds will dance with joy! Yohoho!",
+    "image_path": "/static/pictures/Brook/Cassata/B2.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Brook",
+    "dialogue_text": "First, we prepare the vanilla ice cream. Add 200 gms hung curd and 400 gms Nestlé MILKMAID into a bowl and mix well, [username].",
+    "image_path": "/static/pictures/Brook/Cassata/B3.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Brook",
+    "dialogue_text": "Now, fold in 900 gms fresh cream using the cut and fold method. Take your time, we want it light and fluffy! Yohoho!",
+    "image_path": "/static/pictures/Brook/Cassata/B4.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Brook",
+    "dialogue_text": "Divide this mixture into four equal parts and keep them aside. Each part will become a different ice cream layer!",
+    "image_path": "/static/pictures/Brook/Cassata/B5.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Brook",
+    "dialogue_text": "For the kesar layer, take one part of the vanilla ice cream, add saffron water, and mix well. Look at that golden color, [username]! Yohoho!",
+    "image_path": "/static/pictures/Brook/Cassata/B6.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Brook",
+    "dialogue_text": "Next, the beetroot ice cream. Take another part of vanilla ice cream, add boiled beetroot paste and 3 tbsp tutti frutti, and mix thoroughly.",
+    "image_path": "/static/pictures/Brook/Cassata/B7.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Brook",
+    "dialogue_text": "For the pista ice cream, take a part of vanilla ice cream, add pistachio paste and 3 tbsp tutti frutti. Mix until uniform and creamy.",
+    "image_path": "/static/pictures/Brook/Cassata/B8.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Brook",
+    "dialogue_text": "Now we’ll prep the coating. Crumble some biscuits, chop almonds and pistachios, and mix them well. This will give a delightful crunch!",
+    "image_path": "/static/pictures/Brook/Cassata/B9.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Brook",
+    "dialogue_text": "Let’s start layering the ice cream! Place beetroot ice cream at the base of your mold or small steel bowl. Yohoho, it’s like painting with flavors!",
+    "image_path": "/static/pictures/Brook/Cassata/B10.png"
+  },
+  {
+    "step_id": 6.1,
+    "speaker": "Brook",
+    "dialogue_text": "Next, pour the saffron ice cream mixture as the second layer. Gently spread it so it’s even.",
+    "image_path": "/static/pictures/Brook/Cassata/B11.png"
+  },
+  {
+    "step_id": 6.2,
+    "speaker": "Brook",
+    "dialogue_text": "Third layer is pista ice cream. Level it properly with a spatula so each layer is distinct.",
+    "image_path": "/static/pictures/Brook/Cassata/B12.png"
+  },
+  {
+    "step_id": 6.3,
+    "speaker": "Brook",
+    "dialogue_text": "Finally, top it with the remaining vanilla ice cream. Smooth it gently. It’s starting to look fabulous, [username]! Yohoho!",
+    "image_path": "/static/pictures/Brook/Cassata/B13.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Brook",
+    "dialogue_text": "Freeze the layered ice cream overnight or until fully set. Patience is key, just like a good symphony.",
+    "image_path": "/static/pictures/Brook/Cassata/B14.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Brook",
+    "dialogue_text": "Once set, remove from the freezer. Rinse the mold with a little water to help demold the ice cream block easily.",
+    "image_path": "/static/pictures/Brook/Cassata/B15.png"
+  },
+  {
+    "step_id": 9,
+    "speaker": "Brook",
+    "dialogue_text": "Coat the ice cream block with the biscuit, almond, and pistachio mixture on all sides for that extra crunch!",
+    "image_path": "/static/pictures/Brook/Cassata/B16.png"
+  },
+  {
+    "step_id": 10,
+    "speaker": "Brook",
+    "dialogue_text": "Cut the block into four parts carefully. Each slice is a rainbow of flavors, ready to impress.",
+    "image_path": "/static/pictures/Brook/Cassata/B17.png"
+  },
+  {
+    "step_id": 11,
+    "speaker": "Brook",
+    "dialogue_text": "For the final touch, garnish with a drizzle of Nestlé MILKMAID, whipped cream, a candied cherry, and a mint sprig. Yohoho, perfection!",
+    "image_path": "/static/pictures/Brook/Cassata/B18.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Brook",
+    "dialogue_text": "Serve cold, [username], and enjoy a symphony of colors and flavors in every bite!",
+    "image_path": "/static/pictures/Brook/Cassata/B19.png"
+  }
+]

@@ -1,0 +1,277 @@
+/* --- FONT IMPORT: INTER --- */
+/* Added to ensure a proper, modern font style is used throughout the app. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*
+=====================================================
+FAVORITES PAGE STYLES (Aligned with enhanced books.css)
+=====================================================
+*/
+
+/* Apply the Inter font globally */
+body, h1, h2, p, button, span {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* --- GLOBAL LAYOUT FIX --- */
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+/* --- TYPOGRAPHY --- */
+h1 {
+    /* Title for the whole page (Favorites) */
+    color: #facc15; /* Amber 500 */
+    font-size: 2.5rem; /* Larger title */
+    font-weight: 800; /* Extra bold */
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.6), /* Stronger glow */
+                 0 2px 4px rgba(0, 0, 0, 0.9); /* Deep base shadow */
+    letter-spacing: 0.1em; /* More breathing room */
+    text-transform: uppercase; /* Modern emphasis */
+    padding-bottom: 0.5rem; 
+    position: relative; 
+    margin-bottom: 2rem; 
+}
+
+/* Decorative Underline/Separator for the H1 */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; /* Width of the underline */
+    height: 4px;
+    background-color: #fbbf24; /* Amber 400 */
+    border-radius: 2px;
+    box-shadow: 0 0 5px #fbbf24; /* Subtle glow on the line */
+}
+
+/* RECIPE CARD TITLE (h2) - Modernized */
+h2 {
+    color: #ffffff; 
+    font-size: 1.5rem; /* Increased size */
+    font-weight: 700; /* Made bolder */
+    /* CHANGE: Standardized space below the recipe name to 1.0rem */
+    margin-bottom: 1.0rem; 
+}
+
+/* EXPANDED SECTION HEADINGS (h3) - Added for visual separation in expanded view */
+.recipe-details h3 {
+    color: #facc15; /* Amber 500 for contrast */
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* CHANGE: Standardized space above section heading */
+    margin-top: 1.5rem; 
+    /* CHANGE: Standardized space below section heading, keeping text close to it */
+    margin-bottom: 0.75rem; 
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(250, 204, 21, 0.2);
+}
+
+.text-gray-300 {
+    color: #cccccc; 
+}
+
+.text-amber-500 {
+    color: #facc15; 
+    font-weight: 500;
+}
+
+
+/* --- GRID LAYOUT --- */
+.grid {
+    display: grid;
+    gap: 3rem; 
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+@media (min-width: 640px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1280px) {
+    .grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* --- CARD STYLING --- */
+.card {
+    background-color: #1f1f1f;
+    padding: 0; 
+    border-radius: 1.25rem; 
+    border: none;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.7); 
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    overflow: hidden; 
+    z-index: 1; 
+    will-change: transform, box-shadow;
+
+    max-height: 650px; 
+    transition: max-height 0.6s ease-in-out, transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.6), 
+                0 10px 20px rgba(0,0,0,0.9); 
+    transform: translateY(-8px); 
+    border-color: transparent;
+}
+
+/* --- IMAGE FITTING FIX --- */
+.img-container {
+    width: 100%;
+    padding-top: 60%; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem 1.25rem 0 0; 
+}
+
+.recipe-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.4s ease-out;
+}
+
+.card:hover .recipe-img {
+    transform: scale(1.1); 
+}
+
+/* --- CONTENT CONTAINERS --- */
+/* Standard Info Section (The Summary View) */
+.recipe-info {
+    padding: 1.5rem; /* Generous padding for container */
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+}
+
+/* CHANGE: Standardized space below the ingredient summary text, separating it from the buttons */
+.recipe-info p {
+    margin-bottom: 1.0rem; 
+}
+
+
+/* --- FAVORITE BUTTON STYLING (Unchanged) --- */
+.favorite-btn span {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.favorite-btn span:hover {
+    transform: scale(1.4); 
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.8)); 
+}
+
+/* Style for the 'View Full Recipe' button */
+.view-recipe-toggle[data-action="view"] {
+    background-color: #facc15;
+    color: #1f1f1f;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.75rem; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.view-recipe-toggle[data-action="view"]:hover {
+    background-color: #fbbf24; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(250, 204, 21, 0.6);
+}
+
+/* --- EXPANDED CARD (SMOOTH TRANSITION FIX) --- */
+
+.card.expanded {
+    /* Set a very large max-height on the card to safely contain expanded content */
+    max-height: 90vh; 
+    overflow-y: auto; 
+
+    /* Visual effect */
+    transform: scale(1.05) translateY(-20px); 
+    z-index: 100; 
+    box-shadow: 0 60px 100px rgba(255, 153, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.1); 
+}
+
+/* 1. HIDE the initial summary content smoothly when expanded */
+.card.expanded .recipe-info {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out; 
+    padding: 0; /* Remove padding to help max-height collapse properly */
+}
+
+/* Hidden Detailed Steps Section Transition (Collapsed State) */
+.recipe-details {
+    max-height: 0; 
+    opacity: 0;
+    visibility: hidden; /* Hide completely when collapsed */
+    overflow: hidden;
+    padding: 0 1.25rem; 
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out 0.2s, visibility 0s 0.4s;
+}
+
+/* 2. SHOW the detailed steps when expanded */
+.card.expanded .recipe-details {
+    /* Use a large value to define the transition end point */
+    max-height: 5000px; 
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.5s ease-in-out 0.1s, opacity 0.4s ease-in-out 0.1s;
+    
+    /* Increased padding for expanded view */
+    padding: 1.5rem; 
+    padding-top: 0.75rem; /* Less space at the very top for a smooth transition from collapsed content */
+    padding-bottom: 1.5rem; 
+}
+
+/* Style for the 'Close Recipe' button (Unchanged) */
+.view-recipe-toggle[data-action="close"] {
+    background-color: #ef4444; 
+    color: white;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.view-recipe-toggle[data-action="close"]:hover {
+    background-color: #dc2626; 
+    transform: translateY(-1px);
+}
+
+
+/* Responsive adjustments for expanded view on mobile */
+@media (max-width: 640px) {
+    .card {
+        border-radius: 1rem;
+    }
+    .img-container {
+        border-radius: 1rem 1rem 0 0;
+        padding-top: 65%; 
+    }
+    .card.expanded {
+        transform: scale(1.02) translateY(-10px); 
+        max-height: 95vh;
+    }
+}

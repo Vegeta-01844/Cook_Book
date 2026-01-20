@@ -1,0 +1,182 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Robin",
+    "dialogue_text": "Ah, there you are, [username]. Just in time — today we’re making something truly elegant: Lasooni Palak Paneer.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R1.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Robin",
+    "dialogue_text": "First, we begin with blanching our spinach. A simple step, yet crucial for that vibrant emerald color.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R2.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Robin",
+    "dialogue_text": "Fill your pot with water, add a generous pinch of salt and a touch of baking soda. This ensures the spinach stays beautifully green.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R3.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Robin",
+    "dialogue_text": "Once the water comes to a roaring boil, add the chopped spinach, fresh green garlic, and that mild green chili.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R4.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Robin",
+    "dialogue_text": "Blanch for just a minute — no more. Overcooking will dull both the flavor and color, and we can't have that, can we, [username]?",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R5.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Robin",
+    "dialogue_text": "Quickly transfer everything into ice-cold water. This stops the cooking instantly and locks in freshness.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R6.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Robin",
+    "dialogue_text": "Strain, squeeze gently, and grind the spinach into a smooth, velvet-green paste.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R7.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Robin",
+    "dialogue_text": "Time to prepare our paneer. Heat oil and shallow-fry the cubes until both sides turn golden.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R8.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Robin",
+    "dialogue_text": "Once fried, transfer the paneer into warm water. This keeps it soft. A small trick… but essential.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R9.png"
+  },
+
+  {
+    "step_id": 9,
+    "speaker": "Robin",
+    "dialogue_text": "Now for our aromatic masala — coriander seeds, peppercorns, cumin, and salt. Dry roast gently.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R10.png"
+  },
+  {
+    "step_id": 10,
+    "speaker": "Robin",
+    "dialogue_text": "Crush it coarsely in a mortar. The aroma… quite irresistible, isn’t it, [username]?",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R11.png"
+  },
+
+  {
+    "step_id": 11,
+    "speaker": "Robin",
+    "dialogue_text": "For the main gravy, heat oil and drop in dry red chilies and cumin seeds. Let them splutter elegantly.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R12.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Robin",
+    "dialogue_text": "Add sliced garlic and sauté until lightly golden. Its perfume is the soul of this dish.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R13.png"
+  },
+  {
+    "step_id": 13,
+    "speaker": "Robin",
+    "dialogue_text": "Now add the spinach paste. Stir slowly — almost like painting, [username].",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R14.png"
+  },
+  {
+    "step_id": 14,
+    "speaker": "Robin",
+    "dialogue_text": "Add ghee, salt, and a pinch of sugar to balance the flavors. Let it all come together.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R15.png"
+  },
+  {
+    "step_id": 15,
+    "speaker": "Robin",
+    "dialogue_text": "Adjust consistency with water, then add finely chopped coriander stems. A delicate but important detail.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R16.png"
+  },
+  {
+    "step_id": 16,
+    "speaker": "Robin",
+    "dialogue_text": "In goes more water, the roasted masala, and our softened paneer cubes.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R17.png"
+  },
+  {
+    "step_id": 17,
+    "speaker": "Robin",
+    "dialogue_text": "Add diced tomato and let everything simmer gently. Patience, [username] — flavors need time to bloom.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R18.png"
+  },
+
+  {
+    "step_id": 18,
+    "speaker": "Robin",
+    "dialogue_text": "While that simmers, prepare a tadka. Heat oil, add a red chili, and chopped garlic. Sauté until fragrant.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R19.png"
+  },
+  {
+    "step_id": 19,
+    "speaker": "Robin",
+    "dialogue_text": "This tadka will crown our dish — bold, aromatic, irresistible.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R20.png"
+  },
+
+  {
+    "step_id": 20,
+    "speaker": "Robin",
+    "dialogue_text": "Your Lasooni Palak Paneer is nearly ready. Give it one last, gentle stir.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R21.png"
+  },
+  {
+    "step_id": 21,
+    "speaker": "Robin",
+    "dialogue_text": "Transfer it to a serving bowl — careful, it’s hot.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R22.png"
+  },
+  {
+    "step_id": 22,
+    "speaker": "Robin",
+    "dialogue_text": "Add a swirl of fresh cream… beautifully done.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R23.png"
+  },
+  {
+    "step_id": 23,
+    "speaker": "Robin",
+    "dialogue_text": "Now drizzle your garlic tadka on top. The aroma is divine, isn't it, [username]?",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R24.png"
+  },
+  {
+    "step_id": 24,
+    "speaker": "Robin",
+    "dialogue_text": "Finish with a sprig of coriander. Simple, elegant, and complete.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R25.png"
+  },
+
+  {
+    "step_id": 25,
+    "speaker": "Robin",
+    "dialogue_text": "And there it is — Lasooni Palak Paneer. Vibrant, creamy, fragrant. You’ve done well, [username].",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R26.png"
+  },
+  {
+    "step_id": 26,
+    "speaker": "Robin",
+    "dialogue_text": "Serve it hot with roti or naan. Anyone you cook for will be impressed… naturally.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R27.png"
+  },
+  {
+    "step_id": 27,
+    "speaker": "Robin",
+    "dialogue_text": "You handled this beautifully.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R27.png"
+  },
+  {
+    "step_id": 28,
+    "speaker": "Robin",
+    "dialogue_text": "See you Soon [username]!.",
+    "image_path": "/static/pictures/Robin/Palak_Paneer/R29.png"
+  }
+]

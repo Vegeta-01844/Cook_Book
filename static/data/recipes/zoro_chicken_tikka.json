@@ -1,0 +1,197 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Zoro",
+    "dialogue_text": "Listen up,[username]. Before you rush into cooking, get your ingredients straight. A messy cook is a dangerous one.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Curd",
+      "Chicken",
+      "Lemon juice"
+    ],
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z1.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Mustard oil ",
+      "Ginger garlic chilli paste",
+      "Kashmiri red chilli paste",
+      "Coriander powder",
+      "Cumin powder"
+    ],
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z2.png"
+  },
+  {
+    "step_id": 0.02,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Chaat masala",
+      "Garam masala",
+      "Roasted kasuri methi powder",
+      "Cardamom powder",
+      "Salt"
+    ],
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z2.png"
+  },
+  {
+    "step_id": 0.03,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Hung curd",
+      "Melted butter",
+      "Coriander",
+      "Mint",
+      "Onion",
+      "Garlic"
+    ],
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z1.png"
+  },
+  {
+    "step_id": 0.04,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Green chillies",
+      "Tamarind",
+      "Jaggery",
+      "Black salt",
+      "Cumin powder"
+    ],
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z2.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Zoro",
+    "dialogue_text": "First things first—hang that curd. Tie it in a cloth and let the water drip out. Don’t rush it.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z3.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Guard",
+    "dialogue_text": "Don’t you dare use watery curd,[username]. It’ll make the marinade slip right off the chicken.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z4.png"
+  },
+
+  {
+    "step_id": 2,
+    "speaker": "Zoro",
+    "dialogue_text": "Now, the 1st marination. Toss the cleaned chicken with salt, lemon juice, chilli powder, and that ginger-garlic-chilli paste. Massage it like you mean it.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z5.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Let it rest for at least 20 minutes. Good flavors take their time—unlike you impatient youngsters.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z6.png"
+  },
+
+  {
+    "step_id": 3,
+    "speaker": "Zoro",
+    "dialogue_text": "On to the 2nd marination. Heat mustard oil till it smokes a little—don’t jump back, it won’t bite. Mix it with all the spices and the hung curd.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z7.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Guard",
+    "dialogue_text": "Mustard oil must be tempered. Cold mustard oil tastes raw and unforgiving—just like my training sessions.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z8.png"
+  },
+  {
+    "step_id": 3.2,
+    "speaker": "Zoro",
+    "dialogue_text": "Coat the chicken thoroughly. No dry spots. If you leave gaps, I’ll know.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z9.png"
+  },
+
+  {
+    "step_id": 4,
+    "speaker": "Zoro",
+    "dialogue_text": "Marinate for at least 4 hours. Overnight is better. Don’t argue. I’ve cooked more years than you’ve been alive.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z10.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Zoro",
+    "dialogue_text": "Heat your grill or oven to around 220°C (425°F). If your device can’t reach it, well… work with what you’ve got.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z11.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Guard",
+    "dialogue_text": "Too low a temperature will make the chicken dry before it browns. Too high will burn the marinade. Balance is everything.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z11.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Zoro",
+    "dialogue_text": "Line the pieces on skewers or directly on a tray. Brush melted butter on top. Don’t drown it, but don’t starve it either.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z12.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Zoro",
+    "dialogue_text": "Cook for 35–40 minutes. Flip halfway. Add more butter if needed. And don’t wander off—your chicken needs supervision.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z13.png"
+  },
+
+  {
+    "step_id": 8,
+    "speaker": "Zoro",
+    "dialogue_text": "While it cooks, prepare your green chutney.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z14.png"
+  },
+  {
+    "step_id": 8.01,
+    "speaker": "Zoro",
+    "dialogue_text": "Blend coriander, mint, garlic, ginger, onion, tamarind, jaggery, spices, and water. Add an ice cube to keep it bright.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z14.png"
+  },
+  {
+    "step_id": 8.1,
+    "speaker": "Guard",
+    "dialogue_text": "Don’t overblend or it turns dark. Respect the ingredients.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z14.png"
+  },
+
+  {
+    "step_id": 9,
+    "speaker": "Zoro",
+    "dialogue_text": "For the red chutney...",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z15.png"
+  },
+  {
+    "step_id": 9.1,
+    "speaker": "Zoro",
+    "dialogue_text": "blend the soaked chillies with garlic, tamarind, coriander, mint, spices, and a splash of oil. Add water slowly—you’re not making soup.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z15.png"
+  },
+
+  {
+    "step_id": 10,
+    "speaker": "Zoro",
+    "dialogue_text": "Once the chicken is charred at the edges and juicy inside, pull it out. If it’s dry, that’s on you—not me.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z16.png"
+  },
+
+  {
+    "step_id": 11,
+    "speaker": "Zoro",
+    "dialogue_text": "Serve it hot with both chutneys & eat like you’ve earned it, not like someone who almost burned down the kitchen five minutes ago.",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z17.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Zoro",
+    "dialogue_text": "Let's clash some other time [username]",
+    "image_path": "/static/pictures/Zoro/Chicken_Tikka/Z17.png"
+  }
+]

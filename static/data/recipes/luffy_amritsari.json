@@ -1,0 +1,138 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Luffy",
+    "dialogue_text": "Oi, [username]! Meat time! We're making Amritsari Murgh, and I’m already hungry! Let’s gooo!",
+    "image_path": "/static/pictures/Luffy/Murgh/L1.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Luffy",
+    "dialogue_text": "First, toss that chicken in a big bowl. More chicken means more happiness!",
+    "image_path": "/static/pictures/Luffy/Murgh/L2.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Luffy",
+    "dialogue_text": "Add ginger-garlic paste, kasuri methi, coriander powder, degi chili, turmeric, and ghee… ALL the flavor!",
+    "image_path": "/static/pictures/Luffy/Murgh/L3.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Luffy",
+    "dialogue_text": "Now add salt, curd, and oil. Mix it well! Don’t be shy—coat every piece!",
+    "image_path": "/static/pictures/Luffy/Murgh/L4.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Luffy",
+    "dialogue_text": "Let it rest for 20–30 minutes. I know waiting is torture… but it’ll be worth it!",
+    "image_path": "/static/pictures/Luffy/Murgh/L5.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Luffy",
+    "dialogue_text": "Now let’s make the SUPER MASALA! Gather peppercorns, coriander seeds, big cardamom, small cardamom, cloves, fenugreek seeds, cumin, mustard!",
+    "image_path": "/static/pictures/Luffy/Murgh/L6.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Luffy",
+    "dialogue_text": "Grind everything into a fine powder. Like smashing enemies but tastier!",
+    "image_path": "/static/pictures/Luffy/Murgh/L7.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Luffy",
+    "dialogue_text": "Time to roast the chicken! Heat oil on a tawa.",
+    "image_path": "/static/pictures/Luffy/Murgh/L8.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Luffy",
+    "dialogue_text": "Add the marinated chicken and roast both sides until it’s tender and smells amazing!",
+    "image_path": "/static/pictures/Luffy/Murgh/L9.png"
+  },
+  {
+    "step_id": 9,
+    "speaker": "Luffy",
+    "dialogue_text": "Transfer it to a bowl. DON’T eat it yet… we still need gravy!",
+    "image_path": "/static/pictures/Luffy/Murgh/L10.png"
+  },
+
+  {
+    "step_id": 10,
+    "speaker": "Luffy",
+    "dialogue_text": "Let’s build the main curry now! Heat oil in a handi.",
+    "image_path": "/static/pictures/Luffy/Murgh/L11.png"
+  },
+  {
+    "step_id": 11,
+    "speaker": "Luffy",
+    "dialogue_text": "Add bay leaves, green chillies, onions, and butter… so much butter… YES!",
+    "image_path": "/static/pictures/Luffy/Murgh/L12.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Luffy",
+    "dialogue_text": "Sauté until the onions turn golden. That’s when the magic starts!",
+    "image_path": "/static/pictures/Luffy/Murgh/L13.png"
+  },
+  {
+    "step_id": 13,
+    "speaker": "Luffy",
+    "dialogue_text": "Add the prepared masala and chopped tomatoes. Mix mix mix!",
+    "image_path": "/static/pictures/Luffy/Murgh/L14.png"
+  },
+  {
+    "step_id": 14,
+    "speaker": "Luffy",
+    "dialogue_text": "Add water, curd, and salt. Let everything cook together—like a pirate crew bonding!",
+    "image_path": "/static/pictures/Luffy/Murgh/L15.png"
+  },
+  {
+    "step_id": 15,
+    "speaker": "Luffy",
+    "dialogue_text": "Now add the roasted chicken! This is the part I was waiting for!",
+    "image_path": "/static/pictures/Luffy/Murgh/L16.png"
+  },
+  {
+    "step_id": 16,
+    "speaker": "Luffy",
+    "dialogue_text": "Add a bit of water, cover, and cook for 10–12 minutes. The aroma… I can’t take it!",
+    "image_path": "/static/pictures/Luffy/Murgh/L17.png"
+  },
+  {
+    "step_id": 17,
+    "speaker": "Luffy",
+    "dialogue_text": "Finish with butter and chopped coriander. That’s the final flavor punch!",
+    "image_path": "/static/pictures/Luffy/Murgh/L18.png"
+  },
+
+  {
+    "step_id": 18,
+    "speaker": "Luffy",
+    "dialogue_text": "Transfer everything to a bowl. It looks SO GOOD!",
+    "image_path": "/static/pictures/Luffy/Murgh/L19.png"
+  },
+  {
+    "step_id": 19,
+    "speaker": "Luffy",
+    "dialogue_text": "Garnish with a coriander sprig. Fancy food makes me extra hungry!",
+    "image_path": "/static/pictures/Luffy/Murgh/L20.png"
+  },
+  {
+    "step_id": 20,
+    "speaker": "Luffy",
+    "dialogue_text": "Serve hot with roti. [username], hurry and eat it before I do!",
+    "image_path": "/static/pictures/Luffy/Murgh/L21.png"
+  },
+  {
+    "step_id": 21,
+    "speaker": "Luffy",
+    "dialogue_text": "Call me when you need [username]!",
+    "image_path": "/static/pictures/Luffy/Murgh/L22.png"
+  }
+]

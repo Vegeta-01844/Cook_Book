@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Wedges: The Quest</title>                               
+              
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/wedges.css') }}">    <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+</head>
+
+<body>
+    <div id="game-container">
+        
+        <!-- Left Avatar -->
+        <div id="left-avatar-container">
+            <img id="left-avatar-image"
+                 src="{{ url_for('static', filename='pictures/Robin/R B.png') }}"  
+                 alt="Avatar">     <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+        </div>
+
+        <!-- Exit Button -->
+        <div id="exit-button">
+            <a href="{{ url_for('cooking') }}"> 
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+
+        <!-- ERROR / GUARD Dialogue Box -->
+        <div id="error-dialogue-box" class="hidden">
+            <img id="error-speaker-image"
+                 src="{{ url_for('static', filename='pictures/Robin/R11.jpg') }}"
+                 alt="Error Avatar">  <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+
+            <div id="error-text-container">
+                <span id="error-speaker-name"></span>
+                <p id="error-dialogue-text"></p>
+            </div>
+
+            <div id="error-next-arrow" class="next-arrow hidden"></div>
+        </div>
+
+        <!-- Recipe Image -->
+        <div id="recipe-image-display">
+            <img id="current-step-image"
+                 src="{{ url_for('static', filename='pictures/Robin/R3.png') }}"
+                 alt="Recipe Step"> <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+        </div>
+
+        <!-- Back Button -->
+        <div id="back-button"><i class="arrow left"></i></div>
+
+        <!-- Main Dialogue Box -->
+        <div id="dialogue-box">
+            <span id="speaker-name"></span>
+            <p id="dialogue-text">Loading script…</p>
+            <div id="next-arrow" class="next-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop autoplay>
+        <source src="{{ url_for('static', filename='audio/Characters/Robin/Theme.mp3') }}" type="audio/mpeg"> 
+                    <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+    </audio>
+
+    <!-- Click Sound -->
+    <audio id="avatar-click-sound"
+           src="{{ url_for('static', filename='audio/Characters/Robin/Effect.m4a') }}"> <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+    </audio>
+
+    <!-- JS -->
+     <script>
+        window.username = "{{ username }}";
+     </script>
+     <script>
+    console.log("USERNAME TEST:", window.username);
+</script>
+
+     <script src="{{ url_for('static', filename='js/wedges.js') }}"></script> <!--CHANGE HERE !!!!!!!!!!!!!!!!!!!!-->
+</body>
+</html>

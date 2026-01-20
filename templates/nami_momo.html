@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Chilli Momos: The Quest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nami_momo.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        
+        <div id="left-avatar-container">
+            <img id="left-avatar-image" src="{{ url_for('static', filename='pictures/Nami/N B.png') }}" alt="Nami Avatar">
+        </div>
+
+        <div id="exit-button">
+            <a href="{{ url_for('cooking') }}">
+                <i class="fas fa-times"></i> 
+            </a>
+        </div>
+
+        <div id="error-dialogue-box" class="hidden">
+            <img id="error-speaker-image" src="{{ url_for('static', filename='pictures/Nami/N B2.png') }}" alt="Guard Avatar">
+            <div id="error-text-container">
+                <span id="error-speaker-name"></span>
+                <p id="error-dialogue-text"></p>
+            </div>
+             <div id="error-next-arrow" class="next-arrow hidden"></div>
+        </div>
+        
+        <div id="recipe-image-display">
+            <img id="current-step-image" src="{{ url_for('static', filename='pictures/Nami/N10.jpg') }}" alt="Recipe Step Image">
+        </div>
+
+        <div id="back-button">
+            <i class="arrow left"></i> 
+        </div>
+        
+        <div id="dialogue-box">
+            <span id="speaker-name"></span>
+            <p id="dialogue-text">Loading the quest log...</p>
+            <div id="next-arrow" class="next-arrow"></div> 
+        </div>
+    </div>
+    
+    <audio id="background-music" loop autoplay>
+        <source src="{{ url_for('static', filename='audio/Characters/Nami/Theme.mp3') }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <audio id="avatar-click-sound" src="{{ url_for('static', filename='audio/Characters/Nami/Effect.mp3') }}"></audio>
+    
+    
+    <!--JS-->>
+    <script>
+        window.username = "{{ username }}";
+     </script>
+    
+    <script src="{{ url_for('static', filename='js/nami_momo.js') }}"></script>
+
+</body>
+</html>

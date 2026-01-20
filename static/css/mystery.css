@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+
+    background-image: url("../pictures/Extra/Wano.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    background-color: #000; /* ← FIX for white gap */
+}
+
+
+
+/* =====================================
+   BACKGROUND DIM + VIGNETTE
+   ===================================== */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,0,0,0.05) 20%,
+            rgba(0,0,0,0.7) 70%,
+            rgba(0,0,0,0.95) 100%
+        );
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.6s ease, transform 1.6s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+body.spin-active::before {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+#mysteryText{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: none;
+}
+
+/* =====================================
+   MAIN WRAPPER
+   ===================================== */
+.mystery-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 12%;
+    text-align: center;
+}
+
+/* =====================================
+   QUEUE VIEWPORT
+   ===================================== */
+.queue-viewport {
+    width: 100%;
+    margin-top: -100px;
+    max-width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+
+/* =====================================
+   CHARACTERS ROW
+   ===================================== */
+.characters-row {
+    display: flex;
+    gap: 170px;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
+    position: relative;
+}
+
+/* =====================================
+   CHARACTER BOX
+   ===================================== */
+.character {
+    width: 180px;
+    height: 200px;
+    flex: 0 0 auto;
+    position: relative;
+    cursor: pointer;
+    --glow: #ffdd59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+/* ❌ Disable box glow completely */
+.character::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+/* =====================================
+   CHARACTER IMAGE (BODY-BASED GLOW)
+   ===================================== */
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(var(--img-scale, 1));
+    transition: transform 0.6s ease, filter 0.4s ease;
+    z-index: 5;
+}
+
+/* Silhouette */
+.silhouette img {
+    filter: brightness(0) grayscale(100%);
+    color: black !important;
+    opacity: 0.6;
+}
+
+/* Hover */
+.character:hover img {
+    transform: scale(calc(var(--img-scale, 1) * 1.05));
+}
+
+/* ✅ BODY-PERIMETER GLOW (IMAGE-BASED) */
+.selected img {
+    opacity: 1;
+    transform: scale(calc(var(--img-scale, 1) * 1.18));
+    z-index: 10;
+    filter:
+        drop-shadow(0 0 14px var(--glow))
+        drop-shadow(0 0 32px var(--glow))
+        drop-shadow(0 0 64px rgba(255,255,255,0.35));
+    animation: bodyGlow 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes bodyGlow {
+    from {
+        filter:
+            drop-shadow(0 0 12px var(--glow))
+            drop-shadow(0 0 28px rgba(255,255,255,0.25));
+    }
+    to {
+        filter:
+            drop-shadow(0 0 28px var(--glow))
+            drop-shadow(0 0 64px rgba(255,255,255,0.4));
+    }
+}
+
+/* Others dim */
+.dimmed img {
+    opacity: 0.2;
+}
+
+/* =====================================
+   CONTROLS
+   ===================================== */
+.controls {
+    margin-top: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 16px 42px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    transition: all 0.35s ease;
+}
+
+/* Spin Button */
+#spinBtn {
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white !important;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#spinBtn:hover:enabled {
+    background: maroon;
+    box-shadow: 0 0 55px #ffdd59;
+    transform: scale(1.12);
+}
+
+/* Go Button */
+#goBtn {
+    background: linear-gradient(135deg, #06d6a0, #00ffcc);
+    color: white !important;
+    box-shadow: 0 0 24px rgba(0,250,0,0.9);
+}
+#goBtn:hover:enabled {
+    box-shadow: 0 0 55px rgba(0,259,203,0.91);
+    transform: scale(1.14);
+}
+
+/* Disabled */
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* =====================================
+   CHARACTER GLOW COLORS
+   ===================================== */
+.character.char1  { --glow: #ffffff; }
+.character.char2  { --glow: darkblue; }
+.character.char3  { --glow: hotpink; }
+.character.char4  { --glow: violet; }
+.character.char5  { --glow: lime; }
+.character.char6  { --glow: red; }
+.character.char7  { --glow: yellow; }
+.character.char8  { --glow: orange; }
+.character.char9  { --glow: brown; }
+.character.char10 { --glow: teal; }
+
+/* =====================================
+   PER-CHARACTER SIZE TUNING
+   ===================================== */
+.character.char1  { --img-scale: 2; }
+.character.char2  { --img-scale: 2; }
+.character.char3  { --img-scale: 1.3; }
+.character.char4  { --img-scale: 2; }
+.character.char5  { --img-scale: 2; }
+.character.char6  { --img-scale: 2; }
+.character.char7  { --img-scale: 2; }
+.character.char8  { --img-scale: 2; }
+.character.char9  { --img-scale: 2; }
+.character.char10 { --img-scale: 2; }

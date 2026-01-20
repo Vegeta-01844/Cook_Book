@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - Login Logs{% endblock %}
+
+{% block content %}
+<div class="admin-dashboard-container">
+    <h1 class="admin-title">Admin Dashboard</h1>
+    <p class="admin-subtitle">Real-time monitoring of user authentication activity.</p>
+    
+    <div class="logs-card">
+        <h2>Recent Login Logs</h2>
+        
+        {% if logs %}
+        <div class="table-scroll">
+            <table class="log-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>IP Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in logs %}
+                    <tr class="{{ log.action | lower | replace(' ', '-') }}">
+                        <td>{{ log.timestamp }}</td>
+                        <td>{{ log.username if log.username else 'N/A' }}</td>
+                        <td>{{ log.action }}</td>
+                        <td>{{ log.ip_address if log.ip_address else 'Unknown' }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="no-logs">No login activity recorded yet.</p>
+        {% endif %}
+        
+        <div class="action-links">
+            <a href="{{ url_for('index') }}" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Admin Log CSS */
+    .admin-dashboard-container {
+        padding-top: 100px; /* Space below fixed nav bar */
+        min-height: 100vh;
+        background-color: #12121e; /* Deep purple background */
+        color: #e0e0e0;
+        padding-bottom: 50px;
+    }
+    .admin-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #fcb603;
+        margin-bottom: 5px;
+        text-shadow: 0 0 10px rgba(252, 182, 3, 0.5);
+    }
+    .admin-subtitle {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 30px;
+    }
+    .logs-card {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: rgba(25, 25, 40, 0.9);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .logs-card h2 {
+        color: #fff;
+        border-bottom: 2px solid #2e2e4a;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .table-scroll {
+        overflow-x: auto;
+    }
+    .log-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px; /* Space between rows */
+    }
+    .log-table th {
+        background-color: #3b3b55;
+        color: #fff;
+        padding: 12px 15px;
+        text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .log-table th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+    .log-table th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+    .log-table td {
+        background-color: #1e1e35;
+        padding: 12px 15px;
+        border: none;
+        color: #ccc;
+    }
+
+    /* Status Coloring for rows */
+    .login-success { background-color: rgba(40, 167, 69, 0.2); }
+    .login-success td { color: #8aff8a; }
+
+    /* CORRECTED: Grouped failure selectors correctly with commas */
+    .login-failure-unknown-user, 
+    .login-failure-bad-password { 
+        background-color: rgba(220, 53, 69, 0.2); 
+    }
+    .login-failure-unknown-user td, 
+    .login-failure-bad-password td { 
+        color: #ff8a8a; 
+    }
+
+    .logout { background-color: rgba(23, 162, 184, 0.2); }
+    .logout td { color: #8af7ff; }
+    
+    .log-table tbody tr {
+        transition: transform 0.2s;
+    }
+    .log-table tbody tr:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(252, 182, 3, 0.2);
+    }
+
+    .action-links {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .back-link {
+        color: #fcb603;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    .back-link:hover {
+        color: #fff;
+    }
+</style>
+{% endblock %}

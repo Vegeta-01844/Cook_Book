@@ -1,0 +1,239 @@
+/* ============================= */
+/* Reset */
+/* ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: black;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+/* ============================= */
+/* Background Slideshow */
+/* ============================= */
+
+#background-slideshow {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+}
+
+.bg-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.bg-slide.active {
+  opacity: 1;
+}
+
+/* ============================= */
+/* Overlay */
+/* ============================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -2;
+}
+
+/* ============================= */
+/* Main Container */
+/* ============================= */
+
+#culture-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================= */
+/* LEFT PANEL : FOOD IMAGE (Floating Card) */
+/* ============================= */
+
+#food-panel {
+  position: absolute;
+  top: 20%;
+  left: 4.2%;
+  width: 35%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.12);
+  z-index: 2;
+  background: rgba(0,0,0,0.2);
+}
+
+/* Food image styles */
+#food-panel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: opacity 1.2s ease-in-out, transform 12s linear;
+  z-index: 1;
+}
+
+/* Ken Burns subtle zoom */
+#food-panel img.active {
+  transform: scale(1.08);
+}
+
+/* Gradient overlay on image */
+.food-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0));
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Enhanced gloss / shine effect */
+#food-panel::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  transform: translateX(-100%) rotate(0deg);
+  animation: gloss 6s linear infinite;
+  pointer-events: none;
+  z-index: 3;
+  filter: blur(1px);
+}
+
+@keyframes gloss {
+  0% {
+    transform: translateX(-100%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(0deg);
+  }
+}
+
+/* ============================= */
+/* RIGHT PANEL : CREDITS */
+/* ============================= */
+
+#credits-window {
+  margin-left: 30%; /* make room for food card */
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  padding: 10vh 6vw;
+}
+
+/* Infinite scrolling content */
+#credits-content {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  animation: scrollCredits 140s linear infinite;
+  transition: animation-duration 0.3s linear; /* smooth speed change */
+}
+
+/* Pause credits on hover */
+#credits-window:hover #credits-content {
+  animation-play-state: paused;
+}
+
+/* ============================= */
+/* Credit Scenes */
+/* ============================= */
+
+.credit-scene {
+  margin-bottom: 160px;
+  text-align: left;
+}
+
+.credit-scene h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.credit-scene p {
+  font-size: 1.15rem;
+  line-height: 2.3rem;
+  opacity: 0.88;
+}
+
+/* Final emphasis */
+.end-scene h2 {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+}
+
+/* ============================= */
+/* Credits Animation */
+/* ============================= */
+
+@keyframes scrollCredits {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-220%);
+  }
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 900px) {
+  #culture-container {
+    flex-direction: column;
+  }
+
+  #food-panel,
+  #credits-window {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #food-panel {
+    height: 45vh;
+    top: 0;
+    left: 0;
+  }
+
+  #credits-window {
+    height: 55vh;
+    padding: 6vh 6vw;
+  }
+
+  .credit-scene h2 {
+    font-size: 1.9rem;
+  }
+
+  .credit-scene p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Jinbei",
+    "dialogue_text": "Ahoy, [username]. Ready to make a cake that’s as balanced as the tides?",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J1.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Jinbei",
+    "dialogue_text": "Today, we’re making an Eggless Dora Cake — light, soft, and sweet. Let’s begin carefully, step by step.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J2.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Jinbei",
+    "dialogue_text": "[username], first, let's gather our ingredients for the batter.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J3.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Jinbei",
+    "dialogue_text": [
+      "Refined flour",
+      "Powdered sugar",
+      "Condensed milk",
+      "Baking powder",
+      "Honey",
+      "Vanilla essence",
+      "Milk",
+      "Butter"
+    ],
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J3.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Jinbei",
+    "dialogue_text": "Now, in a bowl, combine all the ingredients gently. Mix them well until a smooth batter forms. Precision matters, [username].",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J4.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Jinbei",
+    "dialogue_text": "Next, heat a non-stick pan over medium flame. We don’t want the batter to burn.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J5.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Jinbei",
+    "dialogue_text": "Take a ladle full of batter and pour it into the pan. Cook until golden brown on one side.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J6.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Jinbei",
+    "dialogue_text": "Flip the cake carefully to cook the other side. Keep it even, [username], like a steady boat on calm waters.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J7.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Jinbei",
+    "dialogue_text": "Repeat this process with the remaining batter. Patience is key, just like navigating a long voyage.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J8.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Jinbei",
+    "dialogue_text": "Let the cooked cakes cool slightly before we move to the filling. We don’t want the chocolate to melt prematurely.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J9.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Jinbei",
+    "dialogue_text": "Now, spread the hazelnut chocolate on one cake layer. Not too much, just enough for balance.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J10.png"
+  },
+  {
+    "step_id": 9,
+    "speaker": "Jinbei",
+    "dialogue_text": "Place another cake gently on top and press lightly to secure the layers. Think of it like stacking sails for stability.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J11.png"
+  },
+  {
+    "step_id": 10,
+    "speaker": "Jinbei",
+    "dialogue_text": "Check the edges and make sure the layers are aligned perfectly. Attention to detail matters in both the sea and in cooking.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J12.png"
+  },
+  {
+    "step_id": 11,
+    "speaker": "Jinbei",
+    "dialogue_text": "If you like, add a small decorative swirl of chocolate on top. It’s optional, but adds elegance.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J13.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Jinbei",
+    "dialogue_text": "Now, place the cake on a serving plate. Steady hands, [username].",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J14.png"
+  },
+  {
+    "step_id": 13,
+    "speaker": "Jinbei",
+    "dialogue_text": "We can add extra garnish if desired: a few mint leaves or a dusting of icing sugar works well.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J15.png"
+  },
+  {
+    "step_id": 14,
+    "speaker": "Jinbei",
+    "dialogue_text": "Take a deep breath, step back, and admire your creation. It’s not just dessert — it’s a reward for your effort.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J16.png"
+  },
+  {
+    "step_id": 15,
+    "speaker": "Jinbei",
+    "dialogue_text": "Slice carefully and serve to your guests or enjoy it yourself. Share the joy, like a fisherman sharing his catch.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J17.png"
+  },
+  {
+    "step_id": 16,
+    "speaker": "Guard",
+    "dialogue_text": "Remember, [username], practice makes perfect. Each cake teaches you something new.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J17.png"
+  },
+  {
+    "step_id": 17,
+    "speaker": "Jinbei",
+    "dialogue_text": "Clean up your workspace gently. Order and care are as important in the kitchen as on a ship.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J18.png"
+  },
+  {
+    "step_id": 18,
+    "speaker": "Jinbei",
+    "dialogue_text": "Well done today, [username]. Your Eggless Dora Cake is ready to be enjoyed!",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J19.png"
+  },
+  {
+    "step_id": 19,
+    "speaker": "Jinbei",
+    "dialogue_text": "Keep cooking with care and calm, and every recipe will feel like a smooth sail.",
+    "image_path": "/static/pictures/Jinbei/Dora_Cake/J20.png"
+  }
+]

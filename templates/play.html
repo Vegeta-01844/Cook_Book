@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandline Gourmet - Play</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='pictures/Extra/Logo.jpg') }}">
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}">
+</head>
+<body>
+
+{% include 'banner.html' %}
+
+<!-- BACKGROUND IMAGE -->
+<div id="background-image"></div>
+
+<!-- AUDIO -->
+<audio id="play-audio" loop>
+    <source src="{{ url_for('static', filename='audio/Extra/Katakuri-Full.mp3') }}" type="audio/mpeg">
+</audio>
+
+<!-- INTRO VIDEO -->
+<video id="play-video" class="play-overlay">
+    <source src="{{ url_for('static', filename='video/Zoro-Intro.mp4') }}" type="video/mp4">
+</video>
+
+<!-- GAME CONTAINER -->
+<main id="game-container">
+
+    <!-- PLAYER STATUS BAR -->
+    <section id="player-status-bar">
+        <div id="player-points">
+            <span>Points:</span>
+            <strong id="points-value">0</strong>
+        </div>
+        <div id="player-hearts">
+            <div class="life-icon"></div>
+            <div class="life-icon"></div>
+            <div class="life-icon"></div>
+        </div>
+        <div id="correct-counter">
+            0 / 0
+        </div>
+    </section>
+
+    <!-- INSTRUCTION OVERLAY -->
+    <section id="instruction-overlay" class="overlay">
+        <div class="instruction-card">
+            <img
+                src="{{ url_for('static', filename='pictures/Extra/game.png') }}"
+                alt="How to Play"
+                class="instruction-image"
+            />
+            <div class="instruction-text">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>Guess the dish name in 3 tries</li>
+                    <li>Each wrong guess costs a heart</li>
+                    <li>Hints cost 2 points</li>
+                    <li>Points depend on attempt number</li>
+                    <li>Progress counter shows correct guesses</li>
+                </ul>
+                <button id="start-game-btn">Start Game</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORD GRID -->
+    <section id="word-grid-container"></section>
+
+    <!-- INPUT AREA -->
+    <section id="guess-input-section">
+        <input type="text" id="guess-input" placeholder="Enter your guess..." autocomplete="off"/>
+        <button id="submit-guess-btn">Submit</button>
+    </section>
+
+    <!-- HINT CARD -->
+    <section id="hint-section" class="hidden">
+        <div id="hint-card" class="hint-card">
+            <div class="hint-front">
+                <span>Need a hint?</span>
+            </div>
+            <div class="hint-back">
+                <img id="hint-image" src="" alt="Dish Hint" />
+            </div>
+        </div>
+        <small class="hint-warning">Using a hint will cost 2 points</small>
+    </section>
+
+    <!-- RESULT MODAL -->
+    <section id="game-result-modal" class="overlay hidden">
+        <div class="result-card">
+            <h2 id="result-title"></h2>
+            <p id="result-message"></p>
+            <div id="result-points"></div>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </section>
+    
+
+</main>
+
+<!-- PLAY JS -->
+<script src="{{ url_for('static', filename='js/play.js') }}"></script>
+</body>
+</html>

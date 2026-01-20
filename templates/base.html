@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Grandline Gourmet{% endblock %}</title>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='pictures/Extra/Logo.jpg') }}">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    {% block head_extras %}{% endblock %}
+</head>
+
+<body class="{% if role %}logged-in{% else %}login-page{% endif %}" data-role="{{ role if role else '' }}">
+
+    {% include 'banner.html' %}
+
+    <main class="pt-32 md:pt-36 lg:pt-40">
+        {# pt-32 ~ 8rem top padding for banner height; adjust as needed #}
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Global JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/banner.js') }}"></script>
+
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

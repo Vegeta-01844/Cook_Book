@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Grandline Gourmet - Home{% endblock %}
+{% set page_id = 'home' %}
+
+{% block content %}
+<body class="login-page">
+
+    <!-- AUDIO ELEMENTS -->
+    <audio id="userSound">
+        <source src="{{ url_for('static', filename='audio/Extra/user_select.mp3') }}">
+    </audio>
+    <audio id="adminSound">
+        <source src="{{ url_for('static', filename='audio/Extra/admin_select.wav') }}">
+    </audio>
+
+    {% if not role %}
+    <!-- LOGIN OVERLAY -->
+    <div id="loginOverlay" class="login-overlay active">
+        <div class="login-box">
+            <h1 class="title">Who’s Cooking?</h1>
+
+            {% if error %}
+                <p class="error-msg error-shake">{{ error }}</p>
+            {% endif %}
+
+            <div class="role-selector">
+                <div class="profile-card" id="userCard" data-role="user">
+                    <div class="avatar-box">
+                        <img src="{{ url_for('static', filename='pictures/Extra/user_avatar.png') }}" alt="User">
+                    </div>
+                    <p>User</p>
+                </div>
+
+                <div class="profile-card" id="adminCard" data-role="admin">
+                    <div class="avatar-box">
+                        <img src="{{ url_for('static', filename='pictures/Extra/admin_avatar.png') }}" alt="Admin">
+                    </div>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- USER CHOICE MODAL -->
+    <div id="userChoiceModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Welcome, User!</h2>
+            <p class="mb-4">Do you need an account?</p>
+
+            <div class="modal-buttons">
+                <button id="loginChoiceBtn" class="btn">Login</button>
+                <button id="registerChoiceBtn" class="btn">Register</button>
+            </div>
+
+            <button id="cancelUserChoiceBtn" class="btn cancel" style="margin-top: 20px;">Cancel</button>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="passwordModal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modalRole">Enter Credentials</h2>
+            <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+                <input type="hidden" name="role" id="roleInput">
+
+                <input type="text" id="usernameInput" name="username" placeholder="Username" required>
+                <input type="password" id="passwordInput" name="password" placeholder="Password" required>
+
+                <div class="modal-buttons">
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" id="cancelBtn" class="btn cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- REGISTER MODAL -->
+    <div id="registerModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>New User Registration</h2>
+
+            <form id="registerForm" method="POST" action="{{ url_for('register') }}">
+                <input type="hidden" name="role" value="user">
+
+                <input type="text" id="regUsernameInput" name="reg_username" placeholder="New Username" required>
+                <input type="password" id="regPasswordInput" name="reg_password" placeholder="Password" required>
+                <input type="password" id="regPasswordConfirmInput" name="reg_password_confirm" placeholder="Confirm Password" required>
+
+                <p id="regErrorMsg" class="error-msg hidden"></p>
+
+                <div class="modal-buttons">
+                    <button type="submit" class="btn">Register</button>
+                    <button type="button" id="cancelRegisterBtn" class="btn cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if role %}
+    <!-- INCLUDE TOP BANNER -->
+    {% include "banner.html" with context %}
+    
+    <!-- HOMEPAGE WHEN LOGGED IN -->
+    <audio id="bg-audio" loop>
+        <source src="{{ url_for('static', filename='audio/Extra/Wano_Theme.mp3') }}">
+    </audio>
+
+    <div class="homepage">
+        <div class="left-bg"></div>
+        <div class="right-bg"></div>
+
+        {% if role == 'admin' %}
+        <!-- Admin Dashboard Icon - Only visible for admin users -->
+        <a id="admin-icon-btn" href="{{ url_for('admin_dashboard') }}" class="admin-icon-btn" title="Admin Dashboard">
+            <img src="{{ url_for('static', filename='pictures/Extra/Gomu.png') }}" alt="User">
+        </a>
+        {% endif %}
+
+        <div class="hero-content">
+            <h1 class="hero-title">Grandline Gourmet</h1>
+            <p class="hero-sub">
+                Experience fine culinary adventures from the high seas and embark on this bumpy ride with the Strawhats.
+            </p>
+
+            <div class="buttons">
+                <a id="play-btn" href="{{ url_for('play') }}" class="btn left-btn">Lets Play</a>
+                <a id="cook-btn" href="{{ url_for('cooking') }}" class="btn right-btn">Lets Cook</a>
+                <script>
+                    document.getElementById('cook-btn').addEventListener('click', () => {
+                    sessionStorage.setItem('fromHome', 'true');
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+{% endblock %}

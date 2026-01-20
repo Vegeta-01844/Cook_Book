@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culture | Culinary History</title>
+
+  <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='pictures/Extra/Logo.jpg') }}">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/culture.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+</head>
+<body>
+
+  <!-- Banner -->
+  {% if role %}
+    {% include 'banner.html' %}
+  {% endif %}
+
+  <!-- Background Slideshow -->
+  <div id="background-slideshow"></div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Ambient Audio -->
+  <audio id="culture-audio" loop>
+    <source src="/static/audio/Extra/MotherSea.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Main Container -->
+  <section id="culture-container">
+
+    <!-- LEFT PANEL : FOOD IMAGE -->
+    <div id="food-panel">
+      <!-- Image will be replaced dynamically from JSON -->
+      <img
+        id="food-image"
+        src=""
+        alt="Cultural Dish"
+      />
+      <div class="food-gradient"></div>
+    </div>
+
+    <!-- RIGHT PANEL : CREDITS -->
+    <div id="credits-window">
+
+      <!-- JSON CONTENT WILL BE INJECTED HERE -->
+      <div id="credits-content">
+        <!-- Example structure injected by JS from JSON:
+        <div class="credit-scene" data-img="image_path">
+          <h2>Dish Title</h2>
+          <p>Line 1</p>
+          <p>Line 2</p>
+          <p>Line 3</p>
+        </div>
+        -->
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JSON DATA SOURCE -->
+  <script type="application/json" id="culture-data">
+    {}
+  </script>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/culture.js') }}"></script>
+
+</body>
+</html>

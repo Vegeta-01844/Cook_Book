@@ -1,0 +1,329 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Nami",
+    "dialogue_text": "Welcome back, [username]!",
+    "image_path": "/static/pictures/Nami/N10.jpg"
+  },
+   {
+    "step_id": 0.01,
+    "speaker": "Nami",
+    "dialogue_text": "Today, we’re embarking on a quest to make Paneer Chilli Momos.",
+    "image_path": "/static/pictures/Nami/N10.jpg"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Nami",
+    "dialogue_text": "I’ll guide you through every step, if you’re about to make a mistake, I’ll catch it before disaster strikes. Ready?",
+    "image_path": "/static/pictures/Nami/Momo/N2.png"
+  },
+  {
+    "step_id": 0.15,
+    "speaker": "Nami",
+    "dialogue_text": "Let's take a look at the ingredients. Shall we?",
+    "image_path": "/static/pictures/Nami/Momo/N2.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Nami",
+  "dialogue_text": [
+    "Refined flour",
+    "Salt",
+    "Sugar",
+    "Water"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M1.png"
+  },  
+
+  {
+    "step_id": 0.21,
+    "speaker": "Nami",
+  "dialogue_text": [
+    "Oil",
+    "Carrots",
+    "Cabbage",
+    "Light soy sauce"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M1.png"
+  },
+  {
+    "step_id": 0.3,
+    "speaker": "Nami",
+  "dialogue_text": [
+    "Green chillies",
+    "Ginger",
+    "Paneer",
+    "Fresh coriander leaves"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M2.png"
+  },
+
+  {
+    "step_id": 0.31,
+    "speaker": "Nami",
+    "dialogue_text": [
+    "Black pepper powder",
+    "Vinegar",
+    "Green chilli sauce"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M2.png"
+  },
+  {
+    "step_id": 0.4,
+    "speaker": "Nami",
+    "dialogue_text": [
+    "Tender coriander stems with roots",
+    "Tomato ketchup",
+    "Dry Kashmiri red chillies",
+    "Onions"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M1.png"
+  },
+  {
+    "step_id": 0.41,
+    "speaker": "Nami",
+    "dialogue_text": [
+    "Capsicum",
+    "Fried momos",
+    "Toasted sesame seeds",
+    "Spring onion greens",
+    "Coriander sprig"
+  ],
+    "image_path": "/static/pictures/Nami/Momo/N-M1.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Nami",
+    "dialogue_text": "Now let's begin, get all your ingredients ready.",
+    "image_path": "/static/pictures/Nami/Momo/N-M2.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Nami",
+    "dialogue_text": "Take your refined flour in a bowl. Add a little salt and a pinch of sugar. Now start adding water slowly — go gradually.",
+    "image_path": "/static/pictures/Nami/Momo/N3.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Nami",
+    "dialogue_text": "If the dough suddenly feels sticky or watery — pause. Don’t panic. Just sprinkle a little more flour and continue kneading gently.Smooth and soft is what we want.",
+    "image_path": "/static/pictures/Nami/Momo/N4.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Nami",
+    "dialogue_text": "Great! Once it comes together, drizzle a little oil on top. Rub it lightly and let the dough rest. Perfect — the foundation of our momos is ready.",
+    "image_path": "/static/pictures/Nami/Momo/N5.png"
+  },
+  {
+    "step_id": 1.3,
+    "speaker": "Nami",
+    "dialogue_text": "Now take carrots,cabbage,pinch of salt, a touch of sugar, and little soy sauce",
+    "image_path": "/static/pictures/Nami/Momo/N6.png"
+  },
+  {
+    "step_id": 1.4,
+    "speaker": "Nami",
+    "dialogue_text": "Let's begin cutting and chopping the veggies",
+    "image_path": "/static/pictures/Nami/Momo/N7.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Nami",
+    "dialogue_text": "Now take chopped carrots and cabbage in a bowl. Sprinkle a pinch of salt, a touch of sugar",
+    "image_path": "/static/pictures/Nami/Momo/N8.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Nami",
+    "dialogue_text": "Now add a little soy sauce.",
+    "image_path": "/static/pictures/Nami/Momo/N9.png"
+  },
+  {
+    "step_id": 2.11,
+    "speaker": "Nami",
+    "dialogue_text": "Mix it gently and let the veggies rest for a few minutes.",
+    "image_path": "/static/pictures/Nami/Momo/N11.png"
+  },
+  
+  {
+    "step_id": 2.2,
+    "speaker": "Guard",
+    "dialogue_text": "If your mix starts looking too watery — that means the veggies have released moisture. Good! That’s supposed to happen. Just squeeze the mixture well so that we remove the excess water.",
+    "image_path": "/static/pictures/Nami/Momo/N-M2-2.png"
+  },
+  {
+    "step_id": 2.3,
+    "speaker": "Nami",
+    "dialogue_text": "Transfer the squeezed veggies into a clean bowl — nice work.",
+    "image_path": "/static/pictures/Nami/Momo/N12.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Nami",
+    "dialogue_text": "Add chopped green chillies and chopped ginger to the vegetables.",
+    "image_path": "/static/pictures/Nami/Momo/N13.png"
+  },
+  {
+    "step_id": 3.01,
+    "speaker": "Nami",
+    "dialogue_text": "Now crumble your paneer — gently, not aggressively. We want soft crumbs, not paste. Add fresh coriander leaves, a little salt, and some pepper.",
+    "image_path": "/static/pictures/Nami/Momo/N14.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Guard",
+    "dialogue_text": "If your paneer starts sticking into a paste, stop pressing. Fluff it with your fingers to bring back the crumbly texture.",
+    "image_path": "/static/pictures/Nami/Momo/N15.png"
+  },
+  {
+    "step_id": 3.2,
+    "speaker": "Nami",
+    "dialogue_text": "Mix everything evenly. Perfect — your momo stuffing is ready and smells fantastic.",
+    "image_path": "/static/pictures/Nami/Momo/N16.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Nami",
+    "dialogue_text": "In a bowl, add vinegar, soy sauce, green chilli sauce, red chilli sauce, sugar, chopped ginger, chopped tender coriander stems with roots, tomato ketchup, and a splash of water.",
+    "image_path": "/static/pictures/Nami/Momo/N17.png"
+  },
+  {
+    "step_id": 4.01,
+    "speaker": "Nami",
+    "dialogue_text": "Mix it well until it becomes a smooth, shiny sauce.",
+    "image_path": "/static/pictures/Nami/Momo/N18.png"
+  },
+  {
+    "step_id": 4.02,
+    "speaker": "Nami",
+    "dialogue_text": "Looks Yum, doesn't it?",
+    "image_path": "/static/pictures/Nami/Momo/N-M13-1.png"
+  },
+  {
+    "step_id": 4.03,
+    "speaker": "Nami",
+    "dialogue_text": "Wowiee, Yummy!",
+    "image_path": "/static/pictures/Nami/Momo/N-M13-2.png"
+  },
+  {
+    "step_id": 4.1,
+    "speaker": "Guard",
+    "dialogue_text": "If it tastes too strong or too spicy, once it cooks, it will balance out.",
+    "image_path": "/static/pictures/Nami/Momo/N-M2-3.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Nami",
+    "dialogue_text": "Take your rested dough.",
+    "image_path": "/static/pictures/Nami/Momo/N-M14.png"
+  },
+  {
+    "step_id": 5.01,
+    "speaker": "Nami",
+    "dialogue_text": "Make small lemon-sized balls and roll them into thin discs.",
+    "image_path": "/static/pictures/Nami/Momo/N19.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Guard",
+    "dialogue_text": "If the edges are thick and the center is thin — rotate your rolling pin around the edges more than the center. If the dough keeps shrinking, give it a few seconds to relax.",
+    "image_path": "/static/pictures/Nami/Momo/N-M15-2.png"
+  },
+  {
+    "step_id": 5.2,
+    "speaker": "Nami",
+    "dialogue_text": "Place a spoonful of stuffing in the center. Fold gently, make pleats on one side, and seal it tightly.",
+    "image_path": "/static/pictures/Nami/Momo/N-M15-1.png"
+  },
+  {
+    "step_id": 5.3,
+    "speaker": "Guard",
+    "dialogue_text": "If it’s not sealing properly, lightly wet the edge with water and press again. No gaps — or the stuffing will escape when frying.",
+    "image_path": "/static/pictures/Nami/Momo/N20.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Nami",
+    "dialogue_text": "Heat oil in a kadai. Wait until the oil becomes moderately hot — not smoking, not chilly.",
+    "image_path": "/static/pictures/Nami/Momo/N21.png"
+  },
+  {
+    "step_id": 6.1,
+    "speaker": "Guard",
+    "dialogue_text": "If you drop a momo and it sinks without bubbling — oil needs more heat. If it sizzles too violently — reduce flame immediately.",
+    "image_path": "/static/pictures/Nami/Momo/N22.png"
+  },
+  {
+    "step_id": 6.2,
+    "speaker": "Nami",
+    "dialogue_text": "Now gently drop the momos in.",
+    "image_path": "/static/pictures/Nami/Momo/N22.png"
+  },
+   {
+    "step_id": 6.3,
+    "speaker": "Nami",
+    "dialogue_text": "Fry them until they turn golden and crispy. Beautiful! They look perfect.",
+    "image_path": "/static/pictures/Nami/Momo/N23.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Nami",
+    "dialogue_text": "Heat a little oil in a wok.",
+    "image_path": "/static/pictures/Nami/Momo/N24.png"
+  },
+  {
+    "step_id": 7.01,
+    "speaker": "Nami",
+    "dialogue_text": "Add chopped dry Kashmiri red chillies — sauté for a few seconds. Add diced onions and capsicum. Toss on high flame — we want crunch, not softness.",
+    "image_path": "/static/pictures/Nami/Momo/N25.png"
+  },
+  {
+    "step_id": 7.1,
+    "speaker": "Guard",
+    "dialogue_text": "If the vegetables start releasing water, increase the heat and stir faster. Crunch is key here.",
+    "image_path": "/static/pictures/Nami/Momo/N26.png"
+  },
+  {
+    "step_id": 7.2,
+    "speaker": "Nami",
+    "dialogue_text": "Add the fried momos and toss everything together quickly on high flame. Make sure each momo gets coated with the sauce beautifully.",
+    "image_path": "/static/pictures/Nami/Momo/N27.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Nami",
+    "dialogue_text": "Transfer your spicy, glossy Paneer Chilli Momos to a plate.",
+    "image_path": "/static/pictures/Nami/Momo/N28.png"
+  },
+  {
+    "step_id": 8.01,
+    "speaker": "Nami",
+    "dialogue_text": "Sprinkle toasted sesame seeds, chopped spring onion greens, and place a small coriander sprig on top.",
+    "image_path": "/static/pictures/Nami/Momo/N29.png"
+  },
+  {
+    "step_id": 8.1,
+    "speaker": "Nami",
+    "dialogue_text": "Let's dig in!",
+    "image_path": "/static/pictures/Nami/Momo/N30.png"
+  },
+  {
+    "step_id": 8.2,
+    "speaker": "Nami",
+    "dialogue_text": "It tastes so good!",
+    "image_path": "/static/pictures/Nami/N8.jpg"
+  },
+  {
+    "step_id": 8.3,
+    "speaker": "Nami",
+    "dialogue_text": "Well done you were good at it",
+    "image_path": "/static/pictures/Nami/N6.jpg"
+  },
+  {
+    "step_id": 8.4,
+    "speaker": "Nami",
+    "dialogue_text": "See ya...!",
+    "image_path": "/static/pictures/Nami/Momo/N31.png"
+  }
+]

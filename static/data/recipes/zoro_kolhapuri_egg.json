@@ -1,0 +1,187 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Zoro",
+    "dialogue_text": "Hmph… [username], ready for something fiery today?",
+    "image_path": "/static/pictures/Zoro/KE/Z1.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Zoro",
+    "dialogue_text": "We’re making Kolhapuri Egg Curry — bold, spicy, and not for the faint-hearted.",
+    "image_path": "/static/pictures/Zoro/KE/Z2.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Stick with me, [username]. One wrong move and the curry might bite back.",
+    "image_path": "/static/pictures/Zoro/KE/Z2.png"
+  },
+  {
+    "step_id": 0.15,
+    "speaker": "Zoro",
+    "dialogue_text": "First, let's gather our ingredients. You don’t want to be hunting mid-cook.",
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Coriander seeds",
+      "Cumin seeds",
+      "Mustard seeds",
+      "White sesame seeds",
+      "Carom seeds"
+    ],
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 0.21,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Salt",
+      "Stone flower",
+      "Bay leaf",
+      "Dry red chillies",
+      "Oil"
+    ],
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 0.22,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Dry coconut, sliced",
+      "Green cardamom",
+      "Black peppercorns",
+      "Star anise",
+      "Cinnamon stick"
+    ],
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 0.23,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Nutmeg",
+      "Black cardamom",
+      "Dry fenugreek leaves",
+      "Cloves",
+      "Mace"
+    ],
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 0.24,
+    "speaker": "Zoro",
+    "dialogue_text": [
+      "Trifal",
+      "Asafoetida",
+      "Turmeric powder",
+      "Degi red chilli powder"
+    ],
+    "image_path": "/static/pictures/Zoro/KE/Z4.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Zoro",
+    "dialogue_text": "[username], start by roasting the whole spices for the masala. Pay attention — no distractions.",
+    "image_path": "/static/pictures/Zoro/KE/Z5.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Dry roast coriander seeds, cumin seeds, mustard seeds, sesame seeds, carom seeds, poppy seeds, stone flower, bay leaves and salt. One minute is enough.",
+    "image_path": "/static/pictures/Zoro/KE/Z6.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Zoro",
+    "dialogue_text": "Now roast the dry red chillies separately and add to the bowl. Strong aroma? Good.",
+    "image_path": "/static/pictures/Zoro/KE/Z7.png"
+  },
+  {
+    "step_id": 1.3,
+    "speaker": "Zoro",
+    "dialogue_text": "Heat oil and roast dry coconut, green & black cardamom, star anise, cinnamon, nutmeg, black cardamom, fenugreek leaves, cloves, mace, and trifal until the coconut turns golden.",
+    "image_path": "/static/pictures/Zoro/KE/Z8.png"
+  },
+  {
+    "step_id": 1.31,
+    "speaker": "Zoro",
+    "dialogue_text": "Drain excess oil and combine everything in a grinder. Add asafoetida, turmeric, and degi red chilli powder.",
+    "image_path": "/static/pictures/Zoro/KE/Z9.png"
+  },
+  {
+    "step_id": 1.32,
+    "speaker": "Zoro",
+    "dialogue_text": "Grind into a fine powder. Kolhapuri masala ready, [username]. Don’t underestimate it.",
+    "image_path": "/static/pictures/Zoro/KE/Z10.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Zoro",
+    "dialogue_text": "Time to boil the eggs. Salt, water, vinegar — get it right.",
+    "image_path": "/static/pictures/Zoro/KE/Z11.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Gently add eggs to boiling water. Hard boil for 12 minutes. Then plunge into ice water.",
+    "image_path": "/static/pictures/Zoro/KE/Z12.png"
+  },
+  {
+    "step_id": 2.2,
+    "speaker": "Zoro",
+    "dialogue_text": "Crack and peel carefully. We need them intact for the curry.",
+    "image_path": "/static/pictures/Zoro/KE/Z13.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Zoro",
+    "dialogue_text": "Now, make the ginger-garlic paste. Rough grind is fine.",
+    "image_path": "/static/pictures/Zoro/KE/Z14.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Zoro",
+    "dialogue_text": "Heat some oil in a pan. Add ginger-garlic paste and chopped onions. Sauté until translucent, [username].",
+    "image_path": "/static/pictures/Zoro/KE/Z15.png"
+  },
+  {
+    "step_id": 4.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Add prepared Kolhapuri masala. Saute on low flame for a minute. Smells powerful, doesn’t it?",
+    "image_path": "/static/pictures/Zoro/KE/Z16.png"
+  },
+  {
+    "step_id": 4.2,
+    "speaker": "Zoro",
+    "dialogue_text": "Add water and salt. Let it simmer a bit before adding eggs.",
+    "image_path": "/static/pictures/Zoro/KE/Z17.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Zoro",
+    "dialogue_text": "Gently add boiled egg yolks and whole eggs. Simmer until gravy thickens.",
+    "image_path": "/static/pictures/Zoro/KE/Z18.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Zoro",
+    "dialogue_text": "Finish with chopped coriander leaves and a squeeze of lemon juice. Bold flavors, [username].",
+    "image_path": "/static/pictures/Zoro/KE/Z19.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Zoro",
+    "dialogue_text": "Transfer to serving dish. Garnish with coriander sprig and lemon wedges.",
+    "image_path": "/static/pictures/Zoro/KE/Z20.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Zoro",
+    "dialogue_text": "Serve hot with bhakri. Stay strong, [username], this one bites back!",
+    "image_path": "/static/pictures/Zoro/KE/Z21.png"
+  }
+]

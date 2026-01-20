@@ -1,0 +1,187 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Usopp",
+    "dialogue_text": "Huh?! [username], is that you? Perfect timing! The Great Captain Usopp was just about to start a legendary recipe!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U1.png"
+  },
+  {
+    "step_id": 0.01,
+    "speaker": "Usopp",
+    "dialogue_text": "Today, we're crafting my world-famous, enemy-stunning, heart-melting CHEESE BALLS! Stay close, [username] — things might get dangerously delicious.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Don’t worry, [username]! With Captain Usopp guiding you, nothing will explode! ...Probably.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U1.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Usopp",
+    "dialogue_text": "First, gather your battle supplies. A true warrior of the kitchen must be prepared!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U1.png"
+  },
+  {
+    "step_id": 0.21,
+    "speaker": "Usopp",
+    "dialogue_text": [
+      "Refined flour",
+      "Degi red chilli powder",
+      "Ginger-garlic paste",
+      "Salt & baking soda"
+    ],
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U2.png"
+  },
+  {
+    "step_id": 0.201,
+    "speaker": "Usopp",
+    "dialogue_text": [
+      "Fresh bread crumbs",
+      "Hard cheese for stuffing",
+      "More bread crumbs for coating",
+      "Oil for frying"
+    ],
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U2.png"
+  },
+  {
+    "step_id": 0.22,
+    "speaker": "Usopp",
+    "dialogue_text": [
+      "Mozzarella cheese",
+      "Processed cheese ",
+      "Paneer",
+      "Boiled potatoes",
+      "Green chillies & ginger",
+      "Coriander leaves"
+    ],
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U3.png"
+  },
+  {
+    "step_id": 1,
+    "speaker": "Usopp",
+    "dialogue_text": "[username], grab a big bowl! It’s time to begin the sacred mixing ceremony.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U4.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Throw in mozzarella, processed cheese, paneer, and potatoes. Mash them like you're forging mighty cannon ammo!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U5.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Usopp",
+    "dialogue_text": "Now add green chillies, ginger, and coriander. These are flavor traps, [username] — deadly to blandness!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U6.png"
+  },
+  {
+    "step_id": 1.3,
+    "speaker": "Usopp",
+    "dialogue_text": "Add refined flour, chilli powder, ginger-garlic paste, salt, baking soda, and bread crumbs. Mix! Mix like your life depends on it!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U7.png"
+  },
+  {
+    "step_id": 1.4,
+    "speaker": "Usopp",
+    "dialogue_text": "It should come together into a soft but firm dough. Just like a warrior’s spirit, huh [username]?",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U8.png"
+  },
+  {
+    "step_id": 2,
+    "speaker": "Usopp",
+    "dialogue_text": "Now comes the fun part — shaping the legendary cheese spheres! Take a portion, [username].",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U9.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Make a small hollow inside and sneak in a piece of hard cheese. A secret surprise attack!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U10.png"
+  },
+  {
+    "step_id": 2.2,
+    "speaker": "Usopp",
+    "dialogue_text": "Roll it into a perfect ball. Tight, smooth, and heroic — just like me! Try to match my form, [username]!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U11.png"
+  },
+  {
+    "step_id": 2.3,
+    "speaker": "Usopp",
+    "dialogue_text": "Repeat until your army of cheese balls is ready for battle.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U12.png"
+  },
+  {
+    "step_id": 3,
+    "speaker": "Usopp",
+    "dialogue_text": "Now! Prepare the slurry — the ultimate adhesive armor.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U13.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Mix refined flour, salt, and water. No lumps allowed, [username]! A true sniper needs precision!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U14.png"
+  },
+  {
+    "step_id": 4,
+    "speaker": "Usopp",
+    "dialogue_text": "Heat oil in a kadai. Medium flame — the perfect battlefield temperature.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U15.png"
+  },
+  {
+    "step_id": 4.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Dip a cheese ball into the slurry. Coat it well, [username]!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U16.png"
+  },
+  {
+    "step_id": 4.2,
+    "speaker": "Usopp",
+    "dialogue_text": "Now roll it in bread crumbs. FULL coverage! We need max defense!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U17.png"
+  },
+  {
+    "step_id": 4.3,
+    "speaker": "Usopp",
+    "dialogue_text": "Repeat the armoring process for all cheese balls. No soldier left behind!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U18.png"
+  },
+  {
+    "step_id": 5,
+    "speaker": "Usopp",
+    "dialogue_text": "Alright [username]… IT’S FRYING TIME! Drop them gently into the hot oil.",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U19.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Usopp",
+    "dialogue_text": "Fry until golden, crispy, and puffed up like heroic victory orbs!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U20.png"
+  },
+  {
+    "step_id": 5.2,
+    "speaker": "Usopp",
+    "dialogue_text": "Lift them out carefully… unless you want battle scars like mine! Just kidding—don’t burn yourself, [username].",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U21.png"
+  },
+  {
+    "step_id": 6,
+    "speaker": "Usopp",
+    "dialogue_text": "LOOK AT THEM! Glorious golden cheese balls! Even villains would surrender at first bite!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U22.png"
+  },
+  {
+    "step_id": 7,
+    "speaker": "Usopp",
+    "dialogue_text": "Serve them hot with ketchup. But be warned, [username]… they vanish fast!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U23.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Usopp",
+    "dialogue_text": "You’ve done it! Another victory! The Great Usopp officially recognizes you as a Cheese Ball Warrior!",
+    "image_path": "/static/pictures/Usopp/Cheese_Balls/U24.png"
+  }
+]

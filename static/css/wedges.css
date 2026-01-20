@@ -1,0 +1,371 @@
+/* Custom font link for a retro/pixel look is highly recommended */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 1. Global Reset & Body (Left Alignment) */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* CRITICAL CHANGE: Align contents to the left edge of the viewport */
+    justify-content: flex-start; 
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* 2. Game Container (The main screen - Now aligned to the left) */
+#game-container {
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    box-sizing: border-box; 
+    border: 8px solid #000;
+    overflow: hidden; 
+    background-image: url('/static/pictures/Extra/BG.png');           
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2.1. Left Avatar Container (MOVED TO TOP-RIGHT) */
+#left-avatar-container {
+    position: absolute;
+    top: 30px;
+    right: 30px; /* CRITICAL CHANGE: Aligned to the right edge */
+    left: auto; /* Ensure left property is removed/overridden */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden; 
+    cursor: pointer;
+    perspective: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+}
+
+#left-avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: none; 
+    transform-style: preserve-3d;
+    animation: slowRotateY 10s infinite linear;
+}
+
+/* 2.2. Speed Curl / Trail Effect */
+#left-avatar-container::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 0 2px rgba(255, 255, 255, 0.1),
+        0 0 0 5px rgba(100, 100, 255, 0.2),
+        0 0 0 10px rgba(255, 0, 0, 0.1);
+    z-index: -1;
+    animation: fastRotateZ 5s infinite linear;
+}
+
+/* 2.3. Continuous 3D Rotation Keyframes (Y-axis for the badge image) */
+@keyframes slowRotateY {
+    0% { 
+        transform: rotateY(0deg); 
+    }
+    100% { 
+        transform: rotateY(360deg); 
+    }
+}
+
+/* 2.4. Fast Rotation Keyframes (Z-axis for the speed trail) */
+@keyframes fastRotateZ {
+    0% { 
+        transform: rotateZ(0deg); 
+    }
+    100% { 
+        transform: rotateZ(360deg); 
+    }
+}
+
+/* 3. Recipe Image Display (MOVED FURTHER RIGHT - Blurred Background) */
+#recipe-image-display {
+    position: absolute;
+    top: 20px;
+    left: 10px; 
+    right: auto; 
+    width: 500px; 
+    height: 500px;
+    
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px); 
+
+    border: 5px solid #101010; 
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    /* CRITICAL: Ensure this container is a positioning context for its children */
+    position: relative; 
+}
+
+#current-step-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    background-color: transparent; 
+    z-index: 1; /* Ensure the image is above the blur overlay if needed */
+}
+
+/* --- NEW: Bottom-Right Blur Overlay for Images --- */
+#recipe-image-display::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%; /* Adjust size of the blurred area as needed */
+    height: 10%; /* Adjust size of the blurred area as needed */
+    
+    /* Apply blur effect */
+    backdrop-filter: blur(8px); /* Adjust blur strength as desired */
+    /* -webkit-backdrop-filter: blur(8px); */ /* For Safari compatibility */
+    
+    /* Optional: Add a subtle overlay color to enhance the blur effect */
+    background-color: rgba(0, 0, 0, 0.2); 
+    
+    z-index: 2; /* Ensure it's above the image */
+    pointer-events: none; /* Allows clicks to pass through to elements beneath */
+}
+
+#current-step-image {
+    width: 100%;
+    height: 100%;
+    /* Ensures image fits entirely without cropping */
+    object-fit: contain; 
+    background-color: transparent; 
+}
+
+/* 4. Main Dialogue Box Styling (Floated Above Bottom Edge) */
+#dialogue-box {
+    position: absolute;
+    bottom: 10px; /* NEW: Pushes the box 10px up from the screen bottom */
+    left: 10px; /* NEW: Adds 10px margin on the left */
+    right: 10px; /* NEW: Adds 10px margin on the right */
+    
+    /* Calculate width based on left/right margins (100% minus 20px total margin) */
+    width: calc(100% - 20px); 
+    
+    height: 25vh;
+    background-color: #FFFFFF; 
+    border-top: 6px solid #101010; 
+    box-sizing: border-box;
+    padding: 20px 40px 15px 40px; 
+    color: #101010;
+    font-size: 1.5rem; 
+    line-height: 1.6;
+    user-select: none;
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 90;
+    
+    border-radius: 8px; /* Applied to all corners since it's floating */ 
+}
+
+/* 5. Dialogue Text */
+#dialogue-text {
+    margin: 0;
+    font-weight: bold;
+    flex-grow: 1;
+    padding-top: 0; 
+}
+
+/* 6. Speaker Name (Position adjusted to float above the new dialogue box position) */
+#speaker-name {
+    position: absolute;
+    /* Calculate new bottom: 25vh (height) + 10px (bottom margin) */
+    bottom: calc(25vh + 10px); 
+    left: 20px;
+    
+    /* Center it vertically on the dialogue box border */
+    transform: translateY(50%); 
+    
+    padding: 2px 10px;
+    background-color: #FFFFFF; 
+    border: 3px solid #101010; 
+    border-radius: 5px;
+    font-size: 1.0rem; 
+    font-weight: bold;
+    color: purple;
+    z-index: 95;
+}
+
+/* --- ERROR/GUARD DIALOGUE BOX STYLING (Adjusted for Horizontal Avatar/Name) --- */
+#error-dialogue-box {
+    position: absolute;
+    top: 240px; 
+    right: 30px; 
+    width: 500px; 
+    height: 300px; 
+    background-color: #333;
+    border: 6px solid #b30000;
+    box-sizing: border-box;
+    padding: 20px; 
+    color: #fff;
+    font-size: 1.0rem; 
+    line-height: 1.6;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+#error-speaker-image {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #b30000;
+    margin-right: 15px; 
+    flex-shrink: 0;
+}
+
+#error-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1; 
+}
+
+#error-speaker-name {
+    color: #ffcccc;
+    font-size: 0.9rem; 
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+#error-dialogue-text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.9rem; 
+    line-height: 1.8;
+}
+/* --- END ERROR/GUARD DIALOGUE BOX STYLING --- */
+
+/* 7. Next Arrow Styling (Fix Triangle Visibility) */
+.next-arrow { 
+    position: absolute;
+    bottom: 15px; 
+    right: 25px; 
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #D90000;
+    animation: flash 0.8s infinite step-start;
+}
+
+/* --- NEW: Backtracking Button Styling --- */
+#back-button {
+    position: absolute;
+    bottom: 10px;
+    left: 2px; 
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    z-index: 95;
+    display: none;
+}
+
+#back-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.arrow.left {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/* Hide elements with this class */
+.hidden {
+    display: none !important;
+}
+
+/* 8. Arrow Flash Animation */
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* --- NEW: Exit Button Styling (REPOSITIONED & HIDDEN) --- */
+#exit-button {
+    position: absolute;
+    top: 15px; /* Positioned near the top edge */
+    left: 15px; /* CRITICAL CHANGE: Moved to top-left */
+    
+    width: 50px;
+    height: 30px;
+    line-height: 30px; 
+    text-align: center;
+    background-color: #D90000; 
+    border: 3px solid #000;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 100;
+    
+    /* CRITICAL CHANGE: Hidden until script ends (controlled by JS) */
+    display: none;
+}
+
+#exit-button a {
+    text-decoration: none;
+    color: #fff; 
+    display: block; 
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+#exit-button:hover {
+    background-color: #ff3333; 
+}
+
+/* --- SHIP BACKGROUND REALISTIC BOBBING MOTION --- */
+#game-container {
+    animation: shipBobbing 8s ease-in-out infinite;
+}
+
+@keyframes shipBobbing {
+    0% { background-position: center 0px; }
+    25% { background-position: center 6px; }
+    50% { background-position: center 0px; }
+    75% { background-position: center -6px; }
+    100% { background-position: center 0px; }
+}
+
+.username {
+    color: blue;
+    font-weight: bold; /* optional */
+}

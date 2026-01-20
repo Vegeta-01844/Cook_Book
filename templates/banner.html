@@ -1,0 +1,75 @@
+{% if role %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+<header class="top-banner" id="topBanner">
+    
+    <div class="nav-left">
+        <a href="{{ url_for('index') }}" class="logo-link">
+            <img src="{{ url_for('static', filename='pictures/Extra/banner.png') }}" alt="Logo" class="nav-logo">
+        </a>
+    </div>
+
+    <nav class="nav-center">
+        <ul class="nav-links">
+            {% if page_id in ['home', 'books', 'favorites'] %}
+                <li>
+                    <a href="{{ url_for('index') }}" class="nav-item {% if page_id == 'home' %}active{% endif %}">Home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('culture') }}" class="nav-item {% if page_id == 'culture' %}active{% endif %}">Culture</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('books') }}" class="nav-item {% if page_id == 'books' %}active{% endif %}">Books</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('favorites') }}" class="nav-item {% if page_id == 'favorites' %}active{% endif %}">Favourites</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('mystery') }}" class="nav-item {% if page_id == 'mystery' %}active{% endif %}">
+                        Mystery</a>
+                </li>
+            {% else %}
+                {# Other pages: show only home icon #}
+                <li>
+                    <a href="{{ url_for('index') }}" class="nav-item nav-home-icon" title="Go to Homepage">
+                        <span class="icon-home"><i class="fa-solid fa-house-chimney"></i></span> Home
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <div class="nav-right">
+        <span class="user-greeting">Hello, <strong>{{ username }}</strong></span>
+        <a href="{{ url_for('logout') }}">
+            <button class="logout-btn">Logout</button>
+        </a>
+    </div>
+
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollY = window.scrollY || 0;
+    const banner = document.getElementById("topBanner");
+
+    window.addEventListener("scroll", () => {
+        if (!banner) return;
+
+        // Add background color when page is scrolled
+        if (window.scrollY > 50) {
+            banner.classList.add("scrolled");
+        } else {
+            banner.classList.remove("scrolled");
+        }
+
+        // Hide on scroll down, show on scroll up
+        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+            banner.classList.add("hide");
+        } else {
+            banner.classList.remove("hide");
+        }
+        lastScrollY = window.scrollY;
+    });
+});
+</script>
+{% endif %}

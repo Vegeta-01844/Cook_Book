@@ -1,0 +1,249 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Nami",
+    "dialogue_text": "Oh! Look who finally decided to show up. Ready for a fiery ride, [username]?",
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.05,
+    "speaker": "Nami",
+    "dialogue_text": "Today, we’re making the mighty Schezwan Frankie Roll — spicy, bold, and definitely not for crybabies. Hope you're prepared!",
+    "image_path": "/static/pictures/Nami/Frankie/N1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Nami",
+    "dialogue_text": "Before you burn down the kitchen, let's check our ingredients first!",
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+
+  {
+    "step_id": 0.2,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Kashmiri red chillies",
+      "Oil",
+      "Garlic",
+      "Ginger",
+      "Salt"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.3,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Prepared chili paste",
+      "Vinegar",
+      "Sugar",
+      "Ketchup"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.4,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Salt",
+      "Coriander seeds",
+      "Cumin seeds",
+      "Peppercorns",
+      "Green cardamom",
+      "Cloves"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.41,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Turmeric",
+      "Dry mango powder",
+      "Asafoetida",
+      "Garam masala"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.5,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Refined flour",
+      "Oil"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.7,
+    "speaker": "Nami",
+    "dialogue_text": [
+      "Prepared Schezwan sauce",
+      "Chicken strips",
+      "Cornstarch slurry",
+      "Chilli oil"
+    ],
+    "image_path": "/static/pictures/Nami/Frankie/N2.png"
+  },
+  {
+    "step_id": 0.9,
+    "speaker": "Nami",
+    "dialogue_text": "And finally — roti roasting, assembling, and garnishes… but slow down, [username], we’ll get there!",
+    "image_path": "/static/pictures/Nami/Frankie/N3.png"
+  },
+
+  {
+    "step_id": 1,
+    "speaker": "Nami",
+    "dialogue_text": "Let’s start with the chili paste. Soak the red chillies in hot water till soft. Don’t pretend you forgot.",
+    "image_path": "/static/pictures/Nami/Frankie/N4.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Nami",
+    "dialogue_text": "Blend the soaked chillies with garlic, ginger, salt, and a little water. Smooth paste, okay? No chunky disasters.",
+    "image_path": "/static/pictures/Nami/Frankie/N5.png"
+  },
+
+  {
+    "step_id": 2,
+    "speaker": "Nami",
+    "dialogue_text": "Heat oil and sauté the chili paste. Let it cook till fragrant — not burnt, [username]. Keep an eye on it.",
+    "image_path": "/static/pictures/Nami/Frankie/N6.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Nami",
+    "dialogue_text": "Add vinegar, sugar, ketchup, and salt. Cook till thick.",
+    "image_path": "/static/pictures/Nami/Frankie/N7.png"
+  },
+  {
+    "step_id": 2.11,
+    "speaker": "Nami",
+    "dialogue_text": "Congratulations, you made Schezwan Chutney!",
+    "image_path": "/static/pictures/Nami/Frankie/N7.png"
+  },
+
+  {
+    "step_id": 3,
+    "speaker": "Nami",
+    "dialogue_text": "Time for Frankie masala! Dry roast coriander seeds, cumin, peppercorns, cardamom, and cloves.",
+    "image_path": "/static/pictures/Nami/Frankie/N8.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Nami",
+    "dialogue_text": "Grind them, then mix in turmeric, degi red chilli, dry mango powder, asafoetida, and garam masala. Perfect!",
+    "image_path": "/static/pictures/Nami/Frankie/N9.png"
+  },
+
+  {
+    "step_id": 4,
+    "speaker": "Nami",
+    "dialogue_text": "Let’s knead the dough. Flour, salt, vinegar, water. Oil it and rest it for 10 minutes.",
+    "image_path": "/static/pictures/Nami/Frankie/N10.png"
+  },
+  {
+    "step_id": 4.1,
+    "speaker": "Nami",
+    "dialogue_text": "Roll small rotis and half-cook them on a tawa.",
+    "image_path": "/static/pictures/Nami/Frankie/N11.png"
+  },
+   {
+    "step_id": 4.11,
+    "speaker": "Guard",
+    "dialogue_text": "Don’t puff like chapatis!",
+    "image_path": "/static/pictures/Nami/Frankie/N11.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Nami",
+    "dialogue_text": "Let’s make the Schezwan sauce! Cook the chutney with onions, capsicum, coriander, green chilli, and water.",
+    "image_path": "/static/pictures/Nami/Frankie/N12.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Nami",
+    "dialogue_text": "For the chicken filling, cook chicken strips in the sauce, onions, capsicum, coriander, salt, chilli oil.",
+    "image_path": "/static/pictures/Nami/Frankie/N13.png"
+  },
+  {
+    "step_id": 6.1,
+    "speaker": "Nami",
+    "dialogue_text": "Add cornstarch slurry to thicken. Don’t overdo it, [username], unless you like glue.",
+    "image_path": "/static/pictures/Nami/Frankie/N14.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Nami",
+    "dialogue_text": "For the aloo filling, repeat the same steps — but with potatoes. Even you can’t mess this one up.",
+    "image_path": "/static/pictures/Nami/Frankie/N15.png"
+  },
+
+  {
+    "step_id": 8,
+    "speaker": "Nami",
+    "dialogue_text": "Brush the rotis with oil and roast fully.",
+    "image_path": "/static/pictures/Nami/Frankie/N16.png"
+  },
+  {
+    "step_id": 8.1,
+    "speaker": "Nami",
+    "dialogue_text": "Crispy edges? Yes please!",
+    "image_path": "/static/pictures/Nami/Frankie/N16.png"
+  },
+
+  {
+    "step_id": 9,
+    "speaker": "Nami",
+    "dialogue_text": "Let’s assemble the Aloo Schezwan Frankie!",
+    "image_path": "/static/pictures/Nami/Frankie/N17.png"
+  },
+  {
+    "step_id": 9.1,
+    "speaker": "Nami",
+    "dialogue_text": "Roti → Schezwan chutney → Aloo filling → Cheese → Coriander → Frankie masala.",
+    "image_path": "/static/pictures/Nami/Frankie/N17.png"
+  },
+
+  {
+    "step_id": 10,
+    "speaker": "Nami",
+    "dialogue_text": "For Chicken Frankie: Crack eggs on tawa, place roti on top, add chutney, filling, masala, coriander, cheese.",
+    "image_path": "/static/pictures/Nami/Frankie/N18.png"
+  },
+
+  {
+    "step_id": 11,
+    "speaker": "Nami",
+    "dialogue_text": "Roll them tight, [username]. Tighter. TIGHTER. Yes! That's a Frankie!",
+    "image_path": "/static/pictures/Nami/Frankie/N19.png"
+  },
+  {
+    "step_id": 12,
+    "speaker": "Nami",
+    "dialogue_text": "Look at that! Spicy, juicy, messy in all the right ways. You crushed it!",
+    "image_path": "/static/pictures/Nami/Frankie/N20.png"
+  },
+  {
+    "step_id": 13,
+    "speaker": "Nami",
+    "dialogue_text": "Next time, don’t make me wait so long, okay?",
+    "image_path": "/static/pictures/Nami/Frankie/N21.png"
+  },
+  {
+    "step_id": 14,
+    "speaker": "Nami",
+    "dialogue_text": "Keep Slaying, [username]!",
+    "image_path": "/static/pictures/Nami/Frankie/N21.png"
+  },
+  {
+    "step_id": 15,
+    "speaker": "Nami",
+    "dialogue_text": "With Love <3",
+    "image_path": "/static/pictures/Nami/Frankie/N30.png"
+  }
+]

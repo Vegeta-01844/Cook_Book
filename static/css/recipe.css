@@ -1,0 +1,92 @@
+/* -------------------------------
+   Recipe Page Styling
+--------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel Decorative', serif;
+    background: radial-gradient(circle at center, #1b1b1b 0%, #0a0a0a 100%);
+    color: #f1f1f1;
+}
+
+.recipe-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.85);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.recipe-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 15px #fff, 0 0 10px #ffdd55;
+    margin-bottom: 40px;
+}
+
+.recipe-container h3 {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 0 8px #fff;
+}
+
+.recipe-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f1e8b8;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ffdd55, #00ffff);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px #ffdd55, 0 0 10px #00ffff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffdd55, 0 0 15px #00ffff;
+}
+
+/* -------------------------------
+   Animations
+--------------------------------*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 768px) {
+    .recipe-container {
+        margin: 50px 15px;
+        padding: 20px;
+    }
+
+    .recipe-container h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .recipe-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .recipe-container p {
+        font-size: 1rem;
+    }
+}

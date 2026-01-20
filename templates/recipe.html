@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ dish.name }} - Recipe</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cooking.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
+
+    {% include 'banner.html' %}
+
+</head>
+<body>
+    {% include 'banner.html' %}
+
+    <!-- Background Audio (shared with cooking page) -->
+    <audio id="bg-audio" loop autoplay>
+        <source src="{{ url_for('static', filename='audio/Extra/Sanji-Full.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <div class="recipe-container">
+        <h1>{{ dish.name }}</h1>
+
+        <h3>Ingredients</h3>
+        <p>{{ dish.ingredients }}</p>
+
+        <h3>Steps</h3>
+        <p>{{ dish.steps }}</p>
+
+        <!-- Back button handled by JS -->
+        <a href="#" class="back-btn">← Back to Menu</a>
+    </div>
+
+    <script>
+        // Mark session for skipIntro
+        document.querySelector('.back-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            sessionStorage.setItem('skipIntro', 'true');
+            window.location.href = "/cooking";
+        });
+    </script>
+
+    <script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
+</body>
+</html>

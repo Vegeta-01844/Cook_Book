@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Recipe Books{% endblock %}
+
+{% block head_extras %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/books.css') }}">
+<script src="{{ url_for('static', filename='js/books.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<!-- ADDED mt-20 to push content below the fixed banner and ensure scrolling starts correctly -->
+<div class="container mx-auto mt-20 pt-6 md:pt-0 pb-12 px-4 md:px-6">
+    <h1 class="text-4xl font-extrabold mb-8 text-center text-red-400">Recipe Books</h1>
+
+    {% if recipes|length == 0 %}
+        <p class="text-center text-gray-400">No recipes available at the moment. Time to sail out and find some new tastes!</p>
+    {% else %}
+        <!-- The grid is dynamic and will wrap/grow as needed -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for recipe in recipes %}
+            <!-- Added data-index for potential future use, ensuring data-recipe-id is used for card reference -->
+            <div class="card bg-gray-800 rounded-xl shadow-2xl transition-all duration-500 ease-in-out relative overflow-hidden" data-recipe-id="{{ recipe.id }}" data-index="{{ loop.index }}">
+                
+                <!-- Image Container for Object Fit Fix -->
+                <div class="img-container">
+                    <img src="{{ recipe.img_url }}" alt="{{ recipe.name }}" class="recipe-img">
+                </div>
+
+                <div class="p-5">
+                    <!-- Standard Info Section (Visible initially) -->
+                    <div class="recipe-info">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1 text-white">{{ recipe.name }}</h2>
+                                <p class="text-amber-500 text-sm mb-2 font-medium">{{ recipe.category }}</p>
+                            </div>
+                            <!-- Favorite Heart Form -->
+                            <form method="POST" action="{{ url_for('toggle_favorite', recipe_id=recipe.id) }}" class="favorite-btn ml-4">
+                                <button type="submit" class="text-3xl focus:outline-none transition transform hover:scale-110">
+                                    {% if recipe.id in favorites %}
+                                        <span class="text-red-500 hover:text-red-600">❤️</span>
+                                    {% else %}
+                                        <span class="text-gray-400 hover:text-red-500">🤍</span>
+                                    {% endif %}
+                                </button>
+                            </form>
+                        </div>
+                        <p class="text-gray-300 text-sm mt-3 line-clamp-3">{{ recipe.ingredients }}</p>
+                        
+                        <!-- VIEW BUTTON: This is the button that triggers the expansion -->
+                        <button 
+                            class="view-recipe-toggle mt-4 px-6 py-2 bg-amber-500 text-gray-900 font-bold rounded-lg hover:bg-amber-400 transition transform hover:scale-[1.02] shadow-lg"
+                            data-action="view"
+                        >
+                            View Full Recipe
+                        </button>
+                    </div>
+
+                    <!-- Hidden Detailed Steps Section (Visible upon expansion) -->
+                    <div class="recipe-details transition-all duration-500 ease-in-out">
+                        <h3 class="text-xl font-bold mt-4 text-red-400">Preparation Steps</h3>
+                        <!-- FIX: Replaced newline characters with <br> tags and applied safe filter -->
+                        <div class="text-gray-200 mt-2 text-base">
+                            {{ recipe.steps | replace('\n', '<br>') | safe }}
+                        </div>
+                        
+                        <!-- CLOSE BUTTON: This button is revealed inside the expanded section -->
+                        <button 
+                            class="view-recipe-toggle mt-6 px-6 py-2 bg-gray-600 text-white font-bold rounded-lg hover:bg-gray-700 transition"
+                            data-action="close"
+                        >
+                            Close Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Join the Straw Hat Crew{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto p-6 bg-scroll-paper rounded-lg shadow-xl form-card">
+    <h1 class="text-4xl font-display text-pirate-red text-center mb-6 border-b-2 border-pirate-gold pb-2">
+        Recruitment Sign-Up
+    </h1>
+
+    <p class="text-center text-pirate-dark mb-6">
+        Claim your Pirate Name and Secret Code to access Sanji's kitchen!
+    </p>
+
+    {# Display Error Messages #}
+    {% if error %}
+        <div class="mb-4 p-3 error-msg text-center">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('register') }}" class="space-y-4">
+        
+        <div class="form-group">
+            <label for="usernameInput">Pirate Name (Username)</label>
+            <input type="text" name="username" id="usernameInput" placeholder="Choose a unique name" required class="input-field">
+        </div>
+
+        <div class="form-group">
+            <label for="passwordInput">Secret Code (Password)</label>
+            <input type="password" name="password" id="passwordInput" placeholder="Choose a strong password" required class="input-field">
+        </div>
+
+        <button type="submit" class="w-full bg-pirate-red text-white auth-button py-3 text-lg mt-6">
+            Join the Crew!
+        </button>
+    </form>
+    
+    <div class="text-center mt-6 pt-4 border-t border-pirate-brown">
+        Already registered? <a href="{{ url_for('index') }}" class="text-pirate-red font-bold hover:underline">Log In Here</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,152 @@
+{
+  "rounds": [
+    {
+      "words": [
+        {
+          "dish_name": "LittiChokha",
+          "recipe_id": 1,
+          "hint_image": "/static/pictures/dishes/LittiChokha.jpg",
+          "partial_letters": ["L", "", "", "T", "", "", "", "", "", "H", ""]
+        },
+        {
+          "dish_name": "PaneerPatiala",
+          "recipe_id": 2,
+          "hint_image": "/static/pictures/dishes/PaneerPatiala.png",
+          "partial_letters": ["P", "", "", "", "", "R", "P", "", "", "", "", "L", ""]
+        },
+        {
+          "dish_name": "MasalaDosa",
+          "recipe_id": 3,
+          "hint_image": "/static/pictures/dishes/MasalaDosa.jpg",
+          "partial_letters": ["", "", "S", "", "L", "", "", "", "", "A"]
+        },
+        {
+          "dish_name": "KolkataBiryani",
+          "recipe_id": 4,
+          "hint_image": "/static/pictures/dishes/KolkataBiryani.jpg",
+          "partial_letters": ["K", "", "", "", "A", "", "A", "B", "", "", "", "A", "", ""]
+        },
+        {
+          "dish_name": "ButterChicken",
+          "recipe_id": 5,
+          "hint_image": "/static/pictures/dishes/ButterChicken.jpg",
+          "partial_letters": ["B", "", "", "T", "E", "", "", "H", "", "", "", "", ""]
+        },
+        {
+          "dish_name": "Puchka",
+          "recipe_id": 6,
+          "hint_image": "/static/pictures/dishes/Puchka.jpg",
+          "partial_letters": ["P", "", "C", "", "K", "", "", "A"]
+        },
+        {
+          "dish_name": "PavBhaji",
+          "recipe_id": 7,
+          "hint_image": "/static/pictures/dishes/PavBhaji.jpg",
+          "partial_letters": ["", "", "V", "", "H", "A", "", ""]
+        },
+        {
+          "dish_name": "IdlySambar",
+          "recipe_id": 8,
+          "hint_image": "/static/pictures/dishes/IdlySambar.jpg",
+          "partial_letters": ["", "D", "", "Y", "S", "", "", "B", "", ""]
+        },
+        {
+          "dish_name": "Quesadilla",
+          "recipe_id": 9,
+          "hint_image": "/static/pictures/dishes/Quesadilla.jpg",
+          "partial_letters": ["Q", "", "E", "", "", "D", "", "", "L",""]
+        },
+        {
+          "dish_name": "Khaman",
+          "recipe_id": 10,
+          "hint_image": "/static/pictures/dishes/Khaman.jpg",
+          "partial_letters": ["K", "", "A", "M", "", ""]
+        },
+        {
+          "dish_name": "VadaPav",
+          "recipe_id": 11,
+          "hint_image": "/static/pictures/dishes/VadaPav.jpg",
+          "partial_letters": ["V", "", "D", "A", "", "", ""]
+        },
+        {
+          "dish_name": "ChilliPaneer",
+          "recipe_id": 12,
+          "hint_image": "/static/pictures/dishes/ChilliPaneer.jpg",
+          "partial_letters": ["C", "H", "", "", "L", "I", "", "A", "", "E", "", ""]
+        },
+        {
+          "dish_name": "DalMakhni",
+          "recipe_id": 13,
+          "hint_image": "/static/pictures/dishes/DalMakhani.jpg",
+          "partial_letters": ["D", "", "L", "", "", "", "H", "N", ""]
+        },
+        {
+          "dish_name": "CholeBhature",
+          "recipe_id": 14,
+          "hint_image": "/static/pictures/dishes/CholeBhature.jpg",
+          "partial_letters": ["C", "", "", "L", "", "B", "", "A", "", "", "R", ""]
+        },
+        {
+          "dish_name": "ChettinadChicken",
+          "recipe_id": 15,
+          "hint_image": "/static/pictures/dishes/ChettinadChicken.jpg",
+          "partial_letters": ["C", "", "", "", "", "I", "", "", "", "C", "H", "", "", "", "", ""]
+        },
+        {
+          "dish_name": "MeduVada",
+          "recipe_id": 16,
+          "hint_image": "/static/pictures/dishes/MeduVada.jpg",
+          "partial_letters": ["M", "", "D", "", "V", "", "", ""]
+        },
+        {
+          "dish_name": "RosoGolla",
+          "recipe_id": 17,
+          "hint_image": "/static/pictures/dishes/RosoGolla.jpg",
+          "partial_letters": ["R", "", "", "O", "G", "O", "", "", "L", ""]
+        },
+        {
+          "dish_name": "Rasmalai",
+          "recipe_id": 18,
+          "hint_image": "/static/pictures/dishes/Rasmalai.jpg",
+          "partial_letters": ["R", "", "S", "M", "", "L", "", ""]
+        },
+        {
+          "dish_name": "PalakPaneer",
+          "recipe_id": 19,
+          "hint_image": "/static/pictures/dishes/PalakPaneer.jpg",
+          "partial_letters": ["P", "", "", "", "K", "", "N", "", "E", "", ""]
+        },
+        {
+          "dish_name": "MalaiKofta",
+          "recipe_id": 20,
+          "hint_image": "/static/pictures/dishes/MalaiKofta.png",
+          "partial_letters": ["M", "", "", "", "I", "K", "O", "", "", ""]
+        },
+        {
+          "dish_name": "GoanFishCurry",
+          "recipe_id": 21,
+          "hint_image": "/static/pictures/dishes/GoanFishCurry.jpg",
+          "partial_letters": ["G", "", "A", "N", "", "I", "", "H", "","U","","R","Y"]
+        },
+        {
+          "dish_name": "MysorePak",
+          "recipe_id": 22,
+          "hint_image": "/static/pictures/dishes/MysorePak.jpg",
+          "partial_letters": ["M", "", "S", "", "R", "E", "", "", ""]
+        },
+        {
+          "dish_name": "Pesarattu",
+          "recipe_id": 23,
+          "hint_image": "/static/pictures/dishes/Pesarattu.jpg",
+          "partial_letters": ["P", "E", "", "", "R", "", "", "", ""]
+        },
+        {
+          "dish_name": "ChickenCafreal",
+          "recipe_id": 24,
+          "hint_image": "/static/pictures/dishes/ChickenCafreal.jpg",
+          "partial_letters": ["C", "H", "", "", "", "E", "", "C", "", "F", "", "", "", ""]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mystery Kitchen</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mystery.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+</head>
+<body>
+
+    <!-- Banner -->
+  {% if role %}
+    {% include 'banner.html' %}
+  {% endif %}
+
+<!-- Ambient Audio -->
+<audio id="ambientAudio" loop>
+    <source src="{{ url_for('static', filename='audio/Extra/Mystery.mp3') }}">
+</audio>
+
+<!-- Character Voice -->
+<audio id="characterAudio"></audio>
+
+<div class="mystery-wrapper">
+
+  <div class="queue-viewport">
+    <div class="characters-row" id="charactersRow">
+
+
+        <!-- CHARACTER 1 -->
+        <div class="character silhouette char1"
+             data-name="brook"
+             data-audio="Characters/Brook/Name.m4a"
+             data-route="/cassata_quest">
+            <img src="{{ url_for('static', filename='pictures/Brook/B-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 2 -->
+        <div class="character silhouette char2"
+             data-name="franky"
+             data-audio="Characters/Franky/Name.mp4"
+             data-route="/chop_suey_quest">
+            <img src="{{ url_for('static', filename='pictures/Franky/F-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 3 -->
+        <div class="character silhouette char3"
+             data-name="chopper"
+             data-audio="Characters/Chopper/Name.mp3"
+             data-route="/paneer_tikka_quest">
+            <img src="{{ url_for('static', filename='pictures/Chopper/C-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 4 -->
+        <div class="character silhouette char4"
+             data-name="robin"
+             data-audio="Characters/Robin/Name.mp4"
+             data-route='["/palak_paneer_quest","wedges/quest"]'>
+            <img src="{{ url_for('static', filename='pictures/Robin/R-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 5 -->
+        <div class="character silhouette char5"
+             data-name="zoro"
+             data-audio="Characters/Zoro/Name.mp4"
+             data-route="/chicken_tikka_quest">
+            <img src="{{ url_for('static', filename='pictures/Zoro/Z-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 6 -->
+        <div class="character silhouette char6"
+             data-name="luffy"
+             data-audio="Characters/Luffy/Name.mp4"
+             data-route="/amritsari_quest">
+            <img src="{{ url_for('static', filename='pictures/Luffy/L-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 7 -->
+        <div class="character silhouette char7"
+             data-name="sanji"
+             data-audio="Characters/Sanji/Name.mp4"
+             data-route="/chicken_crispy_quest">
+            <img src="{{ url_for('static', filename='pictures/Sanji/S-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 8 -->
+        <div class="character silhouette char8"
+             data-name="nami"
+             data-audio="Characters/Nami/Name.mp4"
+             data-route='["/momo_quest","frankie_quest"]'>
+            <img src="{{ url_for('static', filename='pictures/Nami/N-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 9 -->
+        <div class="character silhouette char9"
+             data-name="usopp"
+             data-audio="Characters/Ussop/Name.mp4"
+             data-route="/cheese_balls_quest">
+            <img src="{{ url_for('static', filename='pictures/Usopp/U-m.png') }}">
+        </div>
+
+        <!-- CHARACTER 10 -->
+        <div class="character silhouette char10"
+             data-name="jinbei"
+             data-audio="Characters/Jinbei/Name.mp4"
+             data-route="/dora_cake_quest">
+            <img src="{{ url_for('static', filename='pictures/Jinbei/J-m.png') }}">
+        </div>
+
+    </div>
+  </div>  
+
+    <p id="mysteryText" class="mystery-text"></p>
+
+    <div class="controls">
+        <button id="spinBtn">SPIN!</button>
+        <button id="goBtn" disabled>GO!</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/mystery.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+[
+  {
+    "step_id": 0,
+    "speaker": "Chopper",
+    "dialogue_text": "Welcome back, [username]!Today, we're firing up something smoky, juicy, and absolutely irresistible — Paneer Tikka in TWO different flavors!",
+    "image_path": "/static/pictures/Chopper/C1.png"
+  },
+  {
+    "step_id": 0.1,
+    "speaker": "Chopper",
+    "dialogue_text": "Stick with me — perfect marinade, perfect grill marks, and the perfect smoky finish. Don’t worry, this recipe is beginner-friendly!",
+    "image_path": "/static/pictures/Chopper/C1.png"
+  },
+  {
+    "step_id": 0.2,
+    "speaker": "Chopper",
+    "dialogue_text": "Before we start, let’s quickly check our ingredients.",
+    "image_path": "/static/pictures/Chopper/C2.png"
+  },
+
+  {
+    "step_id": 0.3,
+    "speaker": "Chopper",
+    "dialogue_text": [
+      "Yogurt",
+      "Ginger Garlic Paste",
+      "Kasuri Methi",
+      "Mustard Oil",
+      "Salt"
+    ],
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C2.png"
+  },
+  {
+    "step_id": 0.4,
+    "speaker": "Chopper",
+    "dialogue_text": [
+      "Carom Seeds",
+      "Roasted Gram Flour",
+      "Degi Mirch",
+      "Panchranga Achaar Paste",
+      "Turmeric Powder"
+    ],
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C3.png"
+  },
+  {
+    "step_id": 0.5,
+    "speaker": "Chopper",
+    "dialogue_text": [
+      "Green Capsicum",
+      "Onions",
+      "Red Bell Peppers",
+      "Paneer"
+    ],
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C2.png"
+  },
+
+  {
+    "step_id": 1,
+    "speaker": "Chopper",
+    "dialogue_text": "Let’s start with the marinade! Grab a mixing bowl — this part is super easy.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C4.png"
+  },
+  {
+    "step_id": 1.1,
+    "speaker": "Chopper",
+    "dialogue_text": "Add yogurt, ginger garlic paste, kasuri methi, and mustard oil.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C5.png"
+  },
+
+  {
+    "step_id": 1.11,
+    "speaker": "Chopper",
+    "dialogue_text": "Mix it well until smooth.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C6.png"
+  },
+  {
+    "step_id": 1.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the yogurt isn’t sour enough, add lemon juice. If it's already sour — don’t push your luck!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C6.png"
+  },
+  {
+    "step_id": 1.3,
+    "speaker": "Chopper",
+    "dialogue_text": "Add salt, ajwain, and roasted besan. Besan helps the marinade cling better.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C7.png"
+  },
+
+  {
+    "step_id": 2,
+    "speaker": "Chopper",
+    "dialogue_text": "Now divide this lovely marinade into two bowls.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C8.png"
+  },
+  {
+    "step_id": 2.01,
+    "speaker": "Chopper",
+    "dialogue_text": "We’re making TWO flavors!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C8.png"
+  },
+  {
+    "step_id": 2.1,
+    "speaker": "Chopper",
+    "dialogue_text": "For the first one, add degi mirch. Mix it gently. If it looks too thick, add a teaspoon of water.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C9.png"
+  },
+  {
+    "step_id": 2.2,
+    "speaker": "Chopper",
+    "dialogue_text": "For the second, add achaar paste and a pinch of turmeric. Achari marinade tends to thicken — that's normal!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C10.png"
+  },
+
+  {
+    "step_id": 3,
+    "speaker": "Chopper",
+    "dialogue_text": "Add capsicum, onions, bell peppers, and paneer into BOTH marinades.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C11.png"
+  },
+
+  {
+    "step_id": 3.01,
+    "speaker": "Chopper",
+    "dialogue_text": "Coat well. TIP: Cold paneer breaks easily — keep it slightly chilled, not frozen!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C11.png"
+  },
+  {
+    "step_id": 3.1,
+    "speaker": "Guard",
+    "dialogue_text": "If a paneer cube slips away — catch it! Wasting paneer is a crime.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C11.png"
+  },
+
+  {
+    "step_id": 4,
+    "speaker": "Chopper",
+    "dialogue_text": "Time to skewer! Thread everything carefully. Stay patient and don’t poke your fingers!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C12.png"
+  },
+
+  {
+    "step_id": 5,
+    "speaker": "Chopper",
+    "dialogue_text": "Heat mustard oil on a grill pan on medium-high heat (180–200°C) until it starts smoking. Add butter.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C13.png"
+  },
+
+  {
+    "step_id": 5.01,
+    "speaker": "Chopper",
+    "dialogue_text": "Ah, that aroma!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C14.png"
+  },
+  {
+    "step_id": 5.1,
+    "speaker": "Chopper",
+    "dialogue_text": "Place the skewers on the pan and grill them evenly. Rotate every 1–2 minutes. Don’t press too hard or the paneer will crumble.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C15.png"
+  },
+  {
+    "step_id": 5.2,
+    "speaker": "Guard",
+    "dialogue_text": "If the butter browns too fast, your heat is too high! Bring it down unless you want a burnt surprise.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C15.png"
+  },
+
+  {
+    "step_id": 6,
+    "speaker": "Chopper",
+    "dialogue_text": "Transfer the grilled tikkas to a plate.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C16.png"
+  },
+
+  {
+    "step_id": 6.01,
+    "speaker": "Chopper",
+    "dialogue_text": "Now for the epic part — SMOKE INFUSION!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C16.png"
+  },
+  {
+    "step_id": 6.2,
+    "speaker": "Guard",
+    "dialogue_text": "Do NOT touch the coal with bare hands unless you're secretly fireproof.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C16.png"
+  },
+
+  {
+    "step_id": 7,
+    "speaker": "Chopper",
+    "dialogue_text": "Uncover — look at that smoky magic! Sprinkle kasuri methi on top.",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C17.png"
+  },
+  {
+    "step_id": 8,
+    "speaker": "Chopper",
+    "dialogue_text": "Your Paneer Tikka — Classic & Achari — is ready! Serve hot with your favorite chutney!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C18.png"
+  },
+  
+  {
+    "step_id": 8.1,
+    "speaker": "Chopper",
+    "dialogue_text": "Serve hot with your favorite chutney!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C18.png"
+  },
+  {
+    "step_id": 8.2,
+    "speaker": "Chopper",
+    "dialogue_text": "Delicious!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C19.png"
+  },
+  {
+    "step_id": 8.2,
+    "speaker": "Chopper",
+    "dialogue_text": "Keep improving konyaro!",
+    "image_path": "/static/pictures/Chopper/Paneer_Tikka/C20.png"
+  }
+]

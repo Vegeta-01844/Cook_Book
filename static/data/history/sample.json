@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Dabeli | Origin",
+    "image": "/static/pictures/Extra/Dabeli.jpg",
+    "lines": [
+      "Dabeli, meaning pressed, originated in Mandvi, Kutch (Gujarat) in the 1960s, invented by Keshavji Gabha Chudasama", 
+      "(Kesha Malam) as an affordable, flavorful snack for the working class, blending spiced mashed potatoes with chutneys", 
+      "and toppings inside a Pav. It's journey from a local Kutchi, innovation to an Indian burger, reflects its simple yet", 
+      "rich flavors, becoming a staple of Indian street food culture.",
+      
+      "Initially sold for just one anna (about six paise), After the division of Bombay State, Gujarati migrants and vendors",
+      "carried Dabeli to Mumbai, where it became a staple. It quickly became a beloved street food, spreading from Gujarat", 
+      "to Maharashtra and, beyond, known for its unique mix, of sweet spicy, tangy flavors and textures."
+    ]
+  },
+  {
+    "title": "Chicken 65 | Origin",
+    "image": "/static/pictures/Extra/Chicken65.jpg",
+    "lines": [
+      "Chicken 65 originated in Chennai at the legendary Buhari Hotel in 1965, created by A.M. Buhari as a quick, spicy", 
+      "appetizer for soldiers and locals, with the 65 likely referring to the year or its menu number, becoming a", 
+      "famous deep-fried chicken dish marinated in yogurt, ginger, garlic, and spices, garnished with curry leaves.", 
+      "While theories suggest it meant 65 pieces, ingredients, or 65-day-old chicken, the most accepted story points to", 
+      "its creation at Hotel Buhari in the year 1965, possibly as item #65 on the menu."
+    ]
+  },
+  {
+    "title": "Pakhala Bhaat | Origin",
+    "image": "/static/pictures/Extra/Pakhala Bhaat.jpg",
+    "lines": [
+      "Pakhala Bhaat originated in the Eastern Indian subcontinent, deeply rooted in Odisha as a staple, but also popular", 
+      "as Panta Bhat (Bengal), Poita Bhat (Assam), etc., evolving from necessity as a cooling, fermenting of cooked rice", 
+      "in water (torani) to preserve it and beat the heat, mentioned in 17th-century texts and even linked to ancient", 
+      "practices, becoming an integral part of Odia culture celebrated on March 20th (Pakhala Dibas)." 
+    ]
+  },
+  {
+    "title": "Kashmiri Wazwan",
+    "image": "/static/pictures/Extra/Kashmir.jpg",
+    "lines": [
+      "Kashmiri Lal Paneer (also called Laal Chaman) is unique for its vibrant red color and distinctive aromatic,",
+      "flavor profile that comes from specific regional spices, particularly fennel powder and dried ginger powder,"
+      ,"rather than onions, garlic, or excessive tomatoes as found in other Indian curries.",
+
+      "The authentic, traditional Kashmiri Pandit version (known as Waze Chaman) often omits onions,",
+      "garlic, and even tomatoes or yogurt, a stark difference from most other North Indian paneer dishes.",
+      "The gravy's body and thickness come from water and the spices themselves, sometimes supplemented with crushed fried onions or tomato puree in modern adaptations.",
+
+      "The paneer is typically shallow-fried until golden brown, then immediately transferred to a bowl", 
+      "of warm water to keep it exceptionally soft and succulent while removing excess oil. "
+    ]
+  },
+  {
+    "title": "Chilli | Origin",
+    "image": "/static/pictures/Extra/Chilli.jpg",
+    "lines": [
+      "Chili peppers originated in the Americas, with the earliest evidence of cultivation in Mexico and", 
+      "South America dating back thousands of years, used by civilizations like the Aztecs and Mayans for", 
+      "food and medicine. Christopher Columbus encountered them in the 15th century, and European explorers",
+      "spread them globally via the Columbian Exchange, with Portuguese traders introducing them to India and",
+      "Asia by the 16th century, rapidly integrating them into cuisines worldwide." 
+    ]
+  },
+  {
+    "title": "Fenu Greek | Origin",
+    "image": "/static/pictures/Extra/fenugreek.jpg",
+    "lines": [
+      "Originates from the Mediterranean region, Western Asia, and Southern Europe, though its exact center",
+      "of origin is debated, with some evidence pointing to the Near East where it was cultivated as far back",
+      "as 4000 BC. It's now a globally cultivated crop, vital in Indian, Middle Eastern, and North African",
+      "and traditional medicines, known for its maple-like scent and dual use as a spice and vegetable." 
+    ]
+  },
+  {
+    "title": "Potato | Origin",
+    "image": "/static/pictures/Extra/potato.jpg",
+    "lines": [
+      "The potato originated in the Andes Mountains of South America, specifically the region",
+      "of modern-day Peru and Bolivia, where it was first domesticated by indigenous peoples",
+      "like the Inca around 8,000 to 10,000 years ago. From its Andean roots, it spread globally",
+      "after Spanish explorers introduced it to Europe in the 16th century,",
+      "becoming a crucial global food crop."
+    ]
+  },
+  {
+    "title": "",
+    "image": "/static/pictures/Extra/food.jpg",
+    "lines":[
+      ""
+    ]
+  }
+]

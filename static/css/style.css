@@ -1,0 +1,268 @@
+/* ---------------------------------------------------------------------- */
+/* --- GLOBAL RESET AND BASE HOMEPAGE-ONLY STYLES (LOGIN SAFE) ----------- */
+/* ---------------------------------------------------------------------- */
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global theme variables */
+:root {
+    --primary-color: #FF416C;
+    --secondary-color: #7205A3;
+    --accent-color: #FFC300;
+
+    --bg-dark: #0f0518;
+    --bg-light: #1a0b27;
+    --text-light: #F4F4F9;
+}
+
+/* GLOBAL FONT SET TO POPPINS */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #000;
+    /* REMOVED: overflow: hidden; -> This now allows scrolling on content pages */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Only global safe reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Prevent homepage styles from affecting login */
+body:not(.login-page) {
+    background-color: var(--bg-dark);
+    color: #fff;
+    /* Ensure content pages have enough height to trigger scroll */
+    min-height: 100vh;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------- HOMEPAGE ONLY ------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.homepage {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8vw;
+    z-index: 1;
+    overflow: hidden; /* The homepage specific container still prevents scroll, which is good */
+
+    background-color: #0f0518;
+    background-image:
+        linear-gradient(
+            30deg,
+            #0f0518 0%,
+            rgba(15, 5, 24, 0.95) 25%,
+            rgba(15, 5, 24, 0) 65%
+        ),
+        url("/static/pictures/Extra/background.jpg");
+
+    background-size: auto 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: absolute;
+    top: 60%;
+    left: 4.5%;
+    transform: translateY(-50%);
+    z-index: 5;
+    max-width: 650px;
+}
+
+.hero-title {
+    margin: 0;
+    font-weight: 800;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.85);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Homepage Buttons */
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.btn {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white !important;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.left-btn {
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    
+}
+
+.right-btn {
+    background: transparent;
+
+    border: 2px solid rgba(255,255,255,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
+}
+
+.right-btn:hover {
+    color: yellow !important;
+    background: rgba(255,255,255,0.15);
+}
+.left-btn:hover {
+    color:#008080 !important;
+    background: rgba(255,255,255,0.15);
+}
+
+/* Background slide images */
+.left-bg, .right-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s cubic-bezier(0.77,0,0.175,1);
+}
+
+.left-bg {
+    left: 0;
+    background-image: url("/static/pictures/Extra/left-bg.jpg");
+    transform: translateX(-100%);
+}
+
+.right-bg {
+    right: 0;
+    background-image: url("/static/pictures/Extra/right-bg.jpg");
+    transform: translateX(100%);
+}
+
+.homepage.slide-left-bg .left-bg { transform: translateX(0); }
+.homepage.slide-right-bg .right-bg { transform: translateX(0); }
+
+/* Responsive homepage */
+@media (max-width: 768px) {
+    .homepage {
+        padding: 0 5%;
+        justify-content: center;
+        background: linear-gradient(
+            to bottom,
+            rgba(15,5,24,0.3) 0%,
+            rgba(15,5,24,0.95) 80%
+        ),
+        url("/static/pictures/Extra/background.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn { width: 100%; }
+}
+
+/* ---------------------------------------------------------------------- */
+/* --- NEW: ADMIN DASHBOARD ICON STYLES ----------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.admin-icon-btn {
+    position: absolute;
+    top: 60px;              /* below banner */
+    right: 10px;             /* right side of screen */
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;     /* ❌ no background */
+    border-radius: 50%;
+
+    box-shadow: none;             /* ❌ no background glow */
+    transition: transform 0.25s ease, opacity 0.25s ease;
+
+    z-index: 20;
+    opacity: 0.9;
+}
+
+/* Image inside button */
+.admin-icon-btn img {
+    width: 100px;                  /* slightly larger for clarity */
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* SVG support (if used instead of img) */
+.admin-icon-btn svg {
+    width: 100px;
+    height: 100px;
+    stroke: currentColor;
+    fill: none;
+}
+
+/* Hover effect — image-only emphasis */
+.admin-icon-btn:hover {
+    transform: scale(1.12);
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-icon-btn {
+        top: 25px;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .admin-icon-btn img,
+    .admin-icon-btn svg {
+        width: 50px;
+        height: 50px;
+    }
+}

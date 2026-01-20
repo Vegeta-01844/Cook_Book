@@ -1,0 +1,303 @@
+/* -------------------------------
+   Sanji Intro Video + Fade
+--------------------------------*/
+.flame-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 5;
+    display: none;
+    object-fit: cover;
+}
+
+.fade-out {
+    animation: fadeOut 1.5s ease forwards;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* -------------------------------
+   Cooking Menu Base
+--------------------------------*/
+.cooking-menu {
+    display: none;
+    padding: 50px 5%;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    background: radial-gradient(circle at center, #1b1b1b 0%, #0a0a0a 100%);
+    overflow-x: hidden;
+}
+
+.menu-title {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 15px #ffd700;
+    margin-bottom: 30px;
+}
+.menu-subsection, a{
+    text-decoration: none;
+}
+/* -------------------------------
+   Section Styling
+--------------------------------*/
+.menu-section {
+    margin: 60px auto;
+    max-width: 1000px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    padding-top: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 15px #fff, 0 0 10px #ffd700;
+    margin-bottom: 25px;
+}
+
+.menu-subsection h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 6px #ffd700;
+    margin-bottom: 20px;
+}
+
+.menu-subsection {
+    margin: 60px auto;
+    max-width: 1000px;
+}
+
+/* -------------------------------
+   Dish Cards Base
+--------------------------------*/
+.dish-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floatUp 1.5s ease forwards;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Animated gradient border */
+.dish-card::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    border-radius: 20px;
+    background-size: 400% 400%;
+    animation: gradientGlow 6s ease infinite;
+    z-index: 0;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* Sparkles behind card */
+.dish-card::after {
+    content: '';
+    position: absolute;
+    top: -10%; left: -10%;
+    width: 120%; height: 120%;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    background-size: 15px 15px;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+    animation: sparkleMove 5s linear infinite;
+}
+
+/* Ensure content is above border glow and sparkles */
+.dish-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.dish-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px var(--primary-color), 0 0 15px #fff;
+}
+
+/* -------------------------------
+   Character Themed Classes
+--------------------------------*/
+.dish-sanji { --primary-color: rgb(255,255,0); }
+.dish-nami { --primary-color: rgb(255,165,0); }
+.dish-chopper { --primary-color:rgb(255,105,180); }
+.dish-usopp { --primary-color: brown; }
+.dish-franky { --primary-color: darkblue; }
+.dish-robin { --primary-color: rgb(157,0,255); }
+.dish-zoro { --primary-color: rgb(102,255,0); }
+.dish-luffy { --primary-color: red; }
+.dish-jimbei { --primary-color:teal ; }
+.dish-brook { --primary-color: white; }
+
+/* Dish Image */
+.dish-img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--primary-color), 0 0 12px rgba(255, 255, 255, 0.2);
+    animation: gentleFloat 6s ease-in-out infinite;
+}
+
+/* Dish Info */
+.dish-info {
+    flex: 1;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.dish-info h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 0 0 10px var(--primary-color), 0 0 8px #fff;
+    margin-bottom: 10px;
+}
+
+.dish-info p {
+    font-size: 1rem;
+    color: #f1e8b8;
+    line-height: 1.5;
+}
+
+/* Character Image */
+.char-img {
+    width: 130px;
+    height: auto;
+    filter: drop-shadow(0 0 20px var(--primary-color)) drop-shadow(0 0 15px #fff);
+    animation: breathe 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover .char-img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* -------------------------------
+   Animations
+--------------------------------*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes gradientGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sparkle movement */
+@keyframes sparkleMove {
+    0% { background-position: 0 0; }
+    50% { background-position: 10px 10px; }
+    100% { background-position: 0 0; }
+}
+
+/* -------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 768px) {
+    .dish-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dish-info {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dish-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .char-img {
+        width: 100px;
+        margin-top: 10px;
+    }
+}
+
+/* -------------------------------
+   Waves & Floating Ingredients
+--------------------------------*/
+#wave-canvas {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* BELOW menu and cards */
+    pointer-events: none; /* don't block clicks */
+    background: #0a0a0a; /* fallback dark background */
+}
+
+/* Cooking menu above waves */
+.cooking-menu {
+    padding-top: 120px;
+    background: transparent;
+    position: relative; 
+    z-index: 5; /* above canvas */
+}
+
+/* Dish cards above waves */
+.dish-card {
+    position: relative; 
+    z-index: 6; /* above canvas and menu background */
+}
+
+/* Ingredients style */
+.ingredient {
+    position: absolute;
+    width: 40px; 
+    height: 40px;
+    pointer-events: none;
+    user-select: none;
+    will-change: transform;
+    z-index: 1; /* above canvas but below menu/dish-cards if needed */
+}
+/* Boat image layer */
+.boat-canvas {
+    position: absolute; /* or fixed if needed full screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3; /* Above waves but below menu/cards */
+    pointer-events: none;
+}
+
+.top-banner {
+    position: fixed; /* keep it at the top of the viewport */
+    font-family: 16px,Poppins,sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20; /* higher than cooking menu and video */
+}
