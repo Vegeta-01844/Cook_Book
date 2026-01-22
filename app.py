@@ -11,7 +11,13 @@ import re # Import regex for basic username validation
 # APP & SECURITY INITIALIZATION
 # -----------------------------------------------------------------------------------------------------------
 
-app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(
+    __name__,
+    static_url_path='/static',
+    static_folder=os.path.join(BASE_DIR, 'static')
+)
 # IMPORTANT: In a production environment, this should be set via environment variables.
 app.secret_key = "your_strong_and_unique_secret_key_here" 
 bcrypt = Bcrypt(app)

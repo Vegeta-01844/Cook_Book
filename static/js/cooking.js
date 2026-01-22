@@ -88,7 +88,7 @@ function initWaves() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    const boatImgSrc = '/static/pictures/ingredients/boat.png';
+    const boatImgSrc = '/static/pictures/ingredients/Boat.png';
     const loadedIngredients = [];
 
     const boat = new Image();
