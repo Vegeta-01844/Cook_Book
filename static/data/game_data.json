@@ -6,25 +6,25 @@
           "dish_name": "LittiChokha",
           "recipe_id": 1,
           "hint_image": "/static/pictures/dishes/LittiChokha.jpg",
-          "partial_letters": ["L", "", "", "T", "", "", "", "", "", "H", ""]
+          "partial_letters": ["L", "", "T", "T", "", "", "H", "", "", "H", ""]
         },
         {
           "dish_name": "PaneerPatiala",
           "recipe_id": 2,
           "hint_image": "/static/pictures/dishes/PaneerPatiala.png",
-          "partial_letters": ["P", "", "", "", "", "R", "P", "", "", "", "", "L", ""]
+          "partial_letters": ["P", "", "", "", "", "R", "P", "A", "", "", "", "L", ""]
         },
         {
           "dish_name": "MasalaDosa",
           "recipe_id": 3,
           "hint_image": "/static/pictures/dishes/MasalaDosa.jpg",
-          "partial_letters": ["", "", "S", "", "L", "", "", "", "", "A"]
+          "partial_letters": ["M", "", "S", "", "L", "", "", "", "", "A"]
         },
         {
           "dish_name": "KolkataBiryani",
           "recipe_id": 4,
           "hint_image": "/static/pictures/dishes/KolkataBiryani.jpg",
-          "partial_letters": ["K", "", "", "", "A", "", "A", "B", "", "", "", "A", "", ""]
+          "partial_letters": ["K", "", "", "", "A", "", "A", "B", "", "", "", "A", "", "I"]
         },
         {
           "dish_name": "ButterChicken",
@@ -36,7 +36,7 @@
           "dish_name": "Puchka",
           "recipe_id": 6,
           "hint_image": "/static/pictures/dishes/Puchka.jpg",
-          "partial_letters": ["P", "", "C", "", "K", "", "", "A"]
+          "partial_letters": ["P", "", "C", "", "K", "A"]
         },
         {
           "dish_name": "PavBhaji",
@@ -102,7 +102,7 @@
           "dish_name": "RosoGolla",
           "recipe_id": 17,
           "hint_image": "/static/pictures/dishes/RosoGolla.jpg",
-          "partial_letters": ["R", "", "", "O", "G", "O", "", "", "L", ""]
+          "partial_letters": ["R", "", "", "O", "G", "O", "", "L", ""]
         },
         {
           "dish_name": "Rasmalai",
@@ -114,7 +114,7 @@
           "dish_name": "PalakPaneer",
           "recipe_id": 19,
           "hint_image": "/static/pictures/dishes/PalakPaneer.jpg",
-          "partial_letters": ["P", "", "", "", "K", "", "N", "", "E", "", ""]
+          "partial_letters": ["P", "", "", "", "K", "", "A", "N", "", "E", ""]
         },
         {
           "dish_name": "MalaiKofta",
